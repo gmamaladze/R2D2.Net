@@ -1,65 +1,78 @@
-﻿using System;
-using System.Net;
-using System.Net.Sockets;
+﻿// This code is distributed under MIT license. 
+// Copyright (c) 2014 George Mamaladze
+// See license.txt or http://opensource.org/licenses/mit-license.php
+
+#region usings
+
+using System;
 using System.Threading;
 using Gma.Netduino.R2D2.Drivers.LegoInfrared;
-using Gma.Netduino.R2D2.Drivers.LegoInfrared.Internal;
 using Microsoft.SPOT.Hardware;
-using SecretLabs.NETMF.Hardware;
 using SecretLabs.NETMF.Hardware.Netduino;
+
+#endregion
 
 namespace Gma.Netduino.R2D2
 {
     public class Program
     {
+        private const double SpeedOfSound = 343.21; //m / s
+
         public static void Main()
         {
-         
-            RemoteControl myLego = new RemoteControl(Pins.GPIO_PIN_D13);
-            var port = new TristatePort(Pins.GPIO_PIN_D0, false, false, ResistorModes.Disabled);
-
-            while (true)
-            {
-
-                var distance = GetDistance(port);
-                if (distance > 60)
+            var random = new Random(DateTime.Now.Millisecond);
+            using (var port = new TristatePort(Pins.GPIO_PIN_D0, false, false, ResistorModes.Disabled))
+            using (var transmitter = new Transmitter())
+                while (true)
                 {
-                      myLego.ComboMode(new ComboDirectModeCommand(ComboDirectState.BlueBrk, ComboDirectState.RedFwd), Channel.Ch1);
-                }
-                else
-                {
+                    var distance = GetDistance(port);
+                    var vector = distance - 0.5;
+                    var sign = Math.Sign(vector);
+                    var value = Math.Abs(vector);
+                    var wheel = random.Next(14)+1;
 
-                    if (distance < 40)
+
+                    byte speed;
+                    if (distance < 1)
                     {
-                        myLego.ComboMode(new ComboDirectModeCommand(ComboDirectState.BlueBrk, ComboDirectState.RedRev), Channel.Ch1);
+                        speed = 2;
                     }
                     else
                     {
-                        myLego.ComboMode(new ComboDirectModeCommand(ComboDirectState.BlueBrk, ComboDirectState.RedBrk), Channel.Ch1);
+                        speed = 3;
+                    }
 
+                    if (distance < 0.50)
+                    {
+                        wheel = (random.Next(1) == 0) ? 7 : 9;
+                        transmitter.Execute(new ComboPwmModeCommand(9, (byte)wheel), Channel.Ch1);
+                        Thread.Sleep(1000);
+                     
+                    }
+                    else
+                    {
+                        var command = new ComboPwmModeCommand(speed, (byte)wheel);
+                        transmitter.Execute(command, Channel.Ch1);
+                        Thread.Sleep(5);
                     }
                 }
-                //Debug.Print("Range: " + distance + " cm");
-                Thread.Sleep(5);
-            }
-           
         }
 
-        private static float GetDistance(TristatePort _port)
+        private static double GetDistance(TristatePort _port)
         {
-            _port.Active = true; // Put port in write mode
-            _port.Write(true);   // Pulse pin
+            _port.Active = true;
+            _port.Write(true);
             _port.Write(false);
-            _port.Active = false;// Put port in read mode;    
+            _port.Active = false;
             bool lineState = false;
             while (!lineState) lineState = _port.Read();
-            long startOfPulseAt = DateTime.Now.Ticks;
+            var startOfPulseAt = DateTime.Now;
 
             while (lineState) lineState = _port.Read();
-            long endOfPulse = DateTime.Now.Ticks;
-            var timeInterval = (int)(endOfPulse - startOfPulseAt);
+            var endOfPulse = DateTime.Now;
 
-            return timeInterval / 580;
+            double intervalSeconds = (double) (endOfPulse - startOfPulseAt).Ticks/TimeSpan.TicksPerSecond;
+            return intervalSeconds/2*SpeedOfSound;
         }
     }
 }

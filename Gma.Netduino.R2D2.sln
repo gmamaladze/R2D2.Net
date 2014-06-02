@@ -9,6 +9,8 @@ Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Gma.Netduino.R2D2.Architect
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gma.Netduino.R2D2.Drivers.Tests", "Gma.Netduino.R2D2.Drivers.Tests\Gma.Netduino.R2D2.Drivers.Tests.csproj", "{AEA43D29-629E-4922-AD8F-A2E3A8795642}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gma.Drivers.Lego.IrRc", "Gma.Drivers.Lego.IrRc\Gma.Drivers.Lego.IrRc.csproj", "{DE7221E0-F7D2-4263-97F6-DEE1819AD2D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{AEA43D29-629E-4922-AD8F-A2E3A8795642}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEA43D29-629E-4922-AD8F-A2E3A8795642}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEA43D29-629E-4922-AD8F-A2E3A8795642}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE7221E0-F7D2-4263-97F6-DEE1819AD2D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE7221E0-F7D2-4263-97F6-DEE1819AD2D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE7221E0-F7D2-4263-97F6-DEE1819AD2D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE7221E0-F7D2-4263-97F6-DEE1819AD2D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

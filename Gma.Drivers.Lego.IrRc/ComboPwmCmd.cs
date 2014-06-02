@@ -5,18 +5,17 @@
 #region usings
 
 using System;
-using Gma.Netduino.R2D2.Drivers.LegoInfrared.Internal;
 
 #endregion
 
-namespace Gma.Netduino.R2D2.Drivers.LegoInfrared
+namespace Gma.Drivers.Lego.IrRc
 {
-    internal class ComboPwmModeCommand : Command
+    public class ComboPwmCmd : Command
     {
         private readonly byte m_BlueValue;
         private readonly byte m_RedValue;
 
-        public ComboPwmModeCommand(byte redValue, byte blueValue)
+        public ComboPwmCmd(byte redValue, byte blueValue)
         {
             if (redValue > 0x0F) throw new ArgumentOutOfRangeException("redValue");
             if (blueValue > 0x0F) throw new ArgumentOutOfRangeException("blueValue");
@@ -35,9 +34,9 @@ namespace Gma.Netduino.R2D2.Drivers.LegoInfrared
         }
 
 
-        public override Message GetMessage(Channel channel, Toggle toggle)
+        public override CommandType CommandType
         {
-            return new ComboPwmModeMessage(channel, toggle, this);
+            get { return CommandType.CompboPwm; }
         }
     }
 }

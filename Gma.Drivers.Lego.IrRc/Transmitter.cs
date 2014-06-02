@@ -6,14 +6,14 @@
 
 using System;
 using System.Threading;
-using Gma.Netduino.R2D2.Drivers.LegoInfrared.Internal;
+using Gma.Drivers.Lego.IrRc.Internal;
 using Microsoft.SPOT.Hardware;
 
 #endregion
 
-namespace Gma.Netduino.R2D2.Drivers.LegoInfrared
+namespace Gma.Drivers.Lego.IrRc
 {
-    internal class Transmitter : IDisposable
+    public class Transmitter : IDisposable
     {
         private readonly SPI m_Spi;
         private readonly bool m_DisposeSpi;
@@ -69,7 +69,7 @@ namespace Gma.Netduino.R2D2.Drivers.LegoInfrared
         public void Execute(Command command, Channel channel)
         {
             var toggle = GetToggle(channel);
-            var message = command.GetMessage(channel, toggle);
+            var message = MessageFactory.GetMessage(command, channel, toggle);
             Send(message);
             TriggerToggle(channel);
         }
@@ -87,7 +87,7 @@ namespace Gma.Netduino.R2D2.Drivers.LegoInfrared
             m_Toggle[channelIndex] = (current == Toggle.Even) ? Toggle.Odd : Toggle.Even ;
         }
 
-        public void Send(Message message)
+        private void Send(Message message)
         {
             var rawData = message.GetData();
             var channel = message.Channel;
