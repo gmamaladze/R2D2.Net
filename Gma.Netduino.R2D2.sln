@@ -5,6 +5,10 @@ VisualStudioVersion = 12.0.30324.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gma.Netduino.R2D2", "Gma.Netduino.R2D2\Gma.Netduino.R2D2.csproj", "{67191B65-2B29-4B7F-B687-B696790F42D0}"
 EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Gma.Netduino.R2D2.Architecture", "Gma.Netduino.R2D2.Architecture\Gma.Netduino.R2D2.Architecture.modelproj", "{2BC51E87-B5ED-4C37-B93E-1098980E41D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gma.Netduino.R2D2.Drivers.Tests", "Gma.Netduino.R2D2.Drivers.Tests\Gma.Netduino.R2D2.Drivers.Tests.csproj", "{AEA43D29-629E-4922-AD8F-A2E3A8795642}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +21,14 @@ Global
 		{67191B65-2B29-4B7F-B687-B696790F42D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67191B65-2B29-4B7F-B687-B696790F42D0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{67191B65-2B29-4B7F-B687-B696790F42D0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{2BC51E87-B5ED-4C37-B93E-1098980E41D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BC51E87-B5ED-4C37-B93E-1098980E41D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BC51E87-B5ED-4C37-B93E-1098980E41D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BC51E87-B5ED-4C37-B93E-1098980E41D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEA43D29-629E-4922-AD8F-A2E3A8795642}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEA43D29-629E-4922-AD8F-A2E3A8795642}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEA43D29-629E-4922-AD8F-A2E3A8795642}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEA43D29-629E-4922-AD8F-A2E3A8795642}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLComponentDiagram1">
+  <componentModelMoniker Id="5139236b-1cf1-4e44-9934-243e9f80e8a1" />
+  <nestedChildShapes>
+    <componentShape Id="7d42ae03-4082-40cf-aa14-66cf97897036" absoluteBounds="0.9375, 2.3229167461395264, 2.40625, 0.95" customColor="161, 199, 231" whiteBoxBoundsHeight="0" whiteBoxBoundsWidth="0" blackBoxBoundsHeight="0" blackBoxBoundsWidth="0" whiteBoxTopEdgeShapesCount="0" whiteBoxRightEdgeShapesCount="0" whiteBoxBottomEdgeShapesCount="0" whiteBoxLeftEdgeShapesCount="0" blackBoxTopEdgeShapesCount="0" blackBoxRightEdgeShapesCount="0" blackBoxBottomEdgeShapesCount="0" blackBoxLeftEdgeShapesCount="0">
+      <componentMoniker Id="ae3a1a0f-a0d5-42e6-bb6e-c75c37748644" LastKnownName="Lego Power Functions" />
+      <relativeChildShapes>
+        <requiredInterfaceShape Id="05e1b512-037e-4848-aee4-5de20a966d9e" absoluteBounds="2, 3.2729167461395265, 0.15625, 0.40625" blackBoxLocation="0" whiteBoxLocation="0" whiteBoxEdge="" blackBoxEdge="" whiteBoxIsOnPort="false" blackBoxIsOnPort="false">
+          <requiredInterfaceMoniker Id="75dc35c6-dd9a-4cc0-92d0-81e988bd5718" LastKnownName="Port1" />
+          <relativeChildShapes />
+        </requiredInterfaceShape>
+      </relativeChildShapes>
+    </componentShape>
+  </nestedChildShapes>
+</componentDiagram>

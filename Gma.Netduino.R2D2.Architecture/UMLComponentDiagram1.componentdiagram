@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="5139236b-1cf1-4e44-9934-243e9f80e8a1" name="Components" linkedPackageId="45e9b6c5-075d-4273-a041-ef80075f3189" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="49cf0184-9df3-430d-8975-8716657a1ffe">
+      <profileInstance Id="196b45f8-6270-4c35-8714-611282cef365" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="4d369801-b8f8-4e82-af2a-090ce06a6a4b">
+      <profileInstance Id="e56081de-1936-4421-871a-6520cc6f4caa" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="ae3a1a0f-a0d5-42e6-bb6e-c75c37748644" name="Lego Power Functions" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f4cc2435-3728-424b-990e-473d41e2f2f2" />
+        <ownedAttributesInternal>
+          <requiredInterface Id="75dc35c6-dd9a-4cc0-92d0-81e988bd5718" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="ce8241cc-035b-40d9-90cb-b0b4659d58cf" />
+            <type_NamedElement>
+              <interfaceMoniker Id="7934f85f-3548-4ac6-a5be-102c5753a149" LastKnownName="IR" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="7934f85f-3548-4ac6-a5be-102c5753a149" name="IR" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="607cbc65-1dd9-4d7e-852e-b9414c65fff5" />
+      </Interface>
+    </modelContainsNamedElements>
+  </packagedElements>
+  <package Id="45e9b6c5-075d-4273-a041-ef80075f3189" name="Gma.Netduino.R2D2.Architecture">
+    <elementDefinition Id="c15aba9b-8ec0-4f04-bf1d-ca4c2c26eabe" />
+  </package>
+</componentModel>

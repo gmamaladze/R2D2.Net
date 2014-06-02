@@ -2,12 +2,11 @@
 using System.Net;
 using System.Net.Sockets;
 using System.Threading;
-using Microsoft.SPOT;
+using Gma.Netduino.R2D2.Drivers.LegoInfrared;
+using Gma.Netduino.R2D2.Drivers.LegoInfrared.Internal;
 using Microsoft.SPOT.Hardware;
 using SecretLabs.NETMF.Hardware;
 using SecretLabs.NETMF.Hardware.Netduino;
-
-using LegoRemoteControl;
 
 namespace Gma.Netduino.R2D2
 {
@@ -16,7 +15,7 @@ namespace Gma.Netduino.R2D2
         public static void Main()
         {
          
-            LegoInfrared myLego = new LegoInfrared(Pins.GPIO_PIN_D13);
+            RemoteControl myLego = new RemoteControl(Pins.GPIO_PIN_D13);
             var port = new TristatePort(Pins.GPIO_PIN_D0, false, false, ResistorModes.Disabled);
 
             while (true)
@@ -25,18 +24,18 @@ namespace Gma.Netduino.R2D2
                 var distance = GetDistance(port);
                 if (distance > 60)
                 {
-                      myLego.ComboMode(LegoInfrared.LegoSpeed.BLUE_BRK, LegoInfrared.LegoSpeed.RED_FWD, LegoInfrared.LegoChannel.CH1);
+                      myLego.ComboMode(new ComboDirectModeCommand(ComboDirectState.BlueBrk, ComboDirectState.RedFwd), Channel.Ch1);
                 }
                 else
                 {
 
                     if (distance < 40)
                     {
-                        myLego.ComboMode(LegoInfrared.LegoSpeed.BLUE_BRK, LegoInfrared.LegoSpeed.RED_REV, LegoInfrared.LegoChannel.CH1);
+                        myLego.ComboMode(new ComboDirectModeCommand(ComboDirectState.BlueBrk, ComboDirectState.RedRev), Channel.Ch1);
                     }
                     else
                     {
-                        myLego.ComboMode(LegoInfrared.LegoSpeed.BLUE_BRK, LegoInfrared.LegoSpeed.RED_BRK, LegoInfrared.LegoChannel.CH1);
+                        myLego.ComboMode(new ComboDirectModeCommand(ComboDirectState.BlueBrk, ComboDirectState.RedBrk), Channel.Ch1);
 
                     }
                 }
@@ -46,7 +45,7 @@ namespace Gma.Netduino.R2D2
            
         }
 
-        private static int GetDistance(TristatePort _port)
+        private static float GetDistance(TristatePort _port)
         {
             _port.Active = true; // Put port in write mode
             _port.Write(true);   // Pulse pin
@@ -58,15 +57,9 @@ namespace Gma.Netduino.R2D2
 
             while (lineState) lineState = _port.Read();
             long endOfPulse = DateTime.Now.Ticks;
-            int ticks = (int)(endOfPulse - startOfPulseAt);
+            var timeInterval = (int)(endOfPulse - startOfPulseAt);
 
-            return ticks / 580;
-        }
-
-
-        static void ping_RangeEvent(object sender, PingEventArgs e)
-        {
-            Debug.Print("Range: " + e.Distance + " cm");
+            return timeInterval / 580;
         }
     }
 }
