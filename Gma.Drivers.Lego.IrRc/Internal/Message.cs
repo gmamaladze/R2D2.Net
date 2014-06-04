@@ -9,12 +9,23 @@
 namespace Gma.Drivers.Lego.IrRc.Internal
 {
     /// <summary>
-    ///     |   Nibble 1   |   Nibble 2   |   Nibble 3   |   LRC       |
-    ///     |  T  E  C  C  |  a  M  M  M  |  D  D  D  D  | L  L  L  L  |
+    ///     Accomodates common code for all types of messages.
     /// </summary>
     internal abstract class Message
     {
-        private const byte Address = 0;
+        //  Generic message format
+        //     +--------------+--------------+--------------+-------------+
+        //     |   Nibble 1   |   Nibble 2   |   Nibble 3   |   LRC       |
+        //     +--------------+--------------+--------------+-------------+
+        //     |  T  E  C  C  |  ?  ?  ?  ?  |  ?  ?  ?  ?  | L  L  L  L  |
+        //     +--------------+--------------+--------------+-------------+
+
+        /// <summary>
+        ///     The address bit is intended for enabling an extra set of 4 channels for future use. The current PF RC Receiver
+        ///     expects by default the address bit to be 0.
+        /// </summary>
+        protected const byte Address = 0;
+
         private readonly Channel m_Channel;
         private readonly Toggle m_Toggle;
 
@@ -49,7 +60,7 @@ namespace Gma.Drivers.Lego.IrRc.Internal
 
         private int GetNiblle1()
         {
-            return (Address << 3) | ((byte) Toggle << 2) | ((byte) Escape << 1) | (byte) Channel;
+            return ((byte) Toggle << 3) | ((byte) Escape << 2) | (byte) Channel;
         }
 
         protected abstract int GetNiblle2();

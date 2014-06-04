@@ -6,7 +6,14 @@ namespace Gma.Drivers.Lego.IrRc
 {
     public enum Output : byte
     {
-        Blue = 0x0,
-        Red = 0x1
+        /// <summary>
+        /// Output A - red
+        /// </summary>
+        Red = 0x0,
+
+        /// <summary>
+        /// Output B - blue
+        /// </summary>
+        Blue = 0x1
     }
 }

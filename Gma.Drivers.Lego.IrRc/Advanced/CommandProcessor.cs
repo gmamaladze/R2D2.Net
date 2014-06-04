@@ -11,6 +11,7 @@ using Gma.Drivers.Lego.IrRc.Internal;
 
 namespace Gma.Drivers.Lego.IrRc.Advanced
 {
+    //TODO Make disposable
     public class CommandProcessor
     {
         private Toggle m_Toggle;

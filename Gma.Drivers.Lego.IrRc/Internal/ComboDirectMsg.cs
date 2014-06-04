@@ -14,6 +14,13 @@ namespace Gma.Drivers.Lego.IrRc.Internal
 {
     internal class ComboDirectMsg : Message
     {
+        //  Extended mode message format
+        //     +--------------+--------------+--------------+-------------+
+        //     |   Nibble 1   |   Nibble 2   |   Nibble 3   |   LRC       |
+        //     +--------------+--------------+--------------+-------------+
+        //     |  T  E  C  C  |  a  0  0  1  |  B  B  A  A  | L  L  L  L  |
+        //     +--------------+--------------+--------------+-------------+
+
         private readonly ComboDirectCmd m_Command;
 
         public ComboDirectMsg(Channel channel, Toggle toggle, Command command)
@@ -24,17 +31,17 @@ namespace Gma.Drivers.Lego.IrRc.Internal
 
         public override Escape Escape
         {
-            get { return Escape.UseMode; }
+            get { return Escape.UseMode0; }
         }
 
         protected override int GetNiblle2()
         {
-            return 0x1; //0001
+            return Address<<3 | 0x1; //001
         }
 
         protected override int GetNiblle3()
         {
-            return (int) m_Command.BlueState | (int) m_Command.RedState;
+            return (int) m_Command.BlueState << 2 | (int) m_Command.RedState;
         }
     }
 }

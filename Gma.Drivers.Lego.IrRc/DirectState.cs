@@ -4,15 +4,11 @@
 
 namespace Gma.Drivers.Lego.IrRc
 {
-    public enum DirectState
+    public enum DirectState : byte
     {
-        RedFlt = 0x0,
-        RedFwd = 0x1,
-        RedRev = 0x2,
-        RedBrk = 0x3,
-        BlueFlt = 0x0,
-        BlueFwd = 0x4,
-        BlueRev = 0x8,
-        BlueBrk = 0xC
+        Float = 0x0,
+        Forward = 0x1,
+        Backward = 0x2,
+        Brake = 0x3
     };
 }

@@ -14,6 +14,13 @@ namespace Gma.Drivers.Lego.IrRc.Internal
 {
     internal class SingleOutputMsg : Message
     {
+        //  Single output mode message format
+        //     +--------------+--------------+--------------+-------------+
+        //     |   Nibble 1   |   Nibble 2   |   Nibble 3   |   LRC       |
+        //     +--------------+--------------+--------------+-------------+
+        //     |  T  E  C  C  |  a  1  M  O  |  D  D  D  D  | L  L  L  L  |
+        //     +--------------+--------------+--------------+-------------+
+
         private readonly SingleOutputCmd m_Command;
 
         public SingleOutputMsg(Channel channel, Toggle toggle, SingleOutputCmd command) : base(channel, toggle)
@@ -23,12 +30,12 @@ namespace Gma.Drivers.Lego.IrRc.Internal
 
         public override Escape Escape
         {
-            get { return Escape.UseMode; }
+            get { return Escape.UseMode0; }
         }
 
         protected override int GetNiblle2()
         {
-            return 1 << 2 | (int) m_Command.SingleOutputMode << 1 | (int) m_Command.Output;
+            return Address << 3 | 1 << 2 | (int) m_Command.SingleOutputMode << 1 | (int) m_Command.Output;
         }
 
         protected override int GetNiblle3()

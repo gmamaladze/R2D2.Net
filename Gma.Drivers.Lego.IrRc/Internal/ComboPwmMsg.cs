@@ -14,6 +14,13 @@ namespace Gma.Drivers.Lego.IrRc.Internal
 {
     internal class ComboPwmMsg : Message
     {
+        //  Extended mode message format
+        //     +--------------+--------------+--------------+-------------+
+        //     |   Nibble 1   |   Nibble 2   |   Nibble 3   |   LRC       |
+        //     +--------------+--------------+--------------+-------------+
+        //     |  T  E  C  C  |  B  B  B  B  |  A  A  A  A  | L  L  L  L  |
+        //     +--------------+--------------+--------------+-------------+
+
         private readonly ComboPwmCmd m_Command;
 
         public ComboPwmMsg(Channel channel, Toggle toggle, Command command)
@@ -24,7 +31,7 @@ namespace Gma.Drivers.Lego.IrRc.Internal
 
         public override Escape Escape
         {
-            get { return Escape.ComboPwmMode; }
+            get { return Escape.ComboPwmMode1; }
         }
 
         protected override int GetNiblle2()

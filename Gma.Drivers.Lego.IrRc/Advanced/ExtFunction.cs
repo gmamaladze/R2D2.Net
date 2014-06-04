@@ -6,14 +6,14 @@ namespace Gma.Drivers.Lego.IrRc.Advanced
 {
     public enum ExtFunction
     {
-        BrakeThenFloatBlue = 0,
-        IncrementSpeedBlue = 1,
-        DecrementSpeedBlue = 2,
-        NotUsed1 = 3,
-        ToggleForwardFloatRed = 4,
-        NotUsed2 = 5,
+        BrakeThenFloatRed = 0,
+        IncrementSpeedRed = 1,
+        DecrementSpeedRed = 2,
+        //NotUsed1 = 3,
+        ToggleForwardFloatBlue = 4,
+        //NotUsed2 = 5,
         ToggleAddressBit = 6,
         AlignToggleBit = 7,
-        Reserved = 8
+        //Reserved = 8
     }
 }

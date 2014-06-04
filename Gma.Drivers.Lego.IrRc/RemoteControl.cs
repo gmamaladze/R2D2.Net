@@ -11,6 +11,7 @@ using Gma.Drivers.Lego.IrRc.Internal;
 
 namespace Gma.Drivers.Lego.IrRc
 {
+    //TODO Make disposable
     public class RemoteControl
     {
         private readonly CommandProcessor m_CommandProcessor;
