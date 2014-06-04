@@ -4,13 +4,13 @@
 
 #region usings
 
-using Gma.Drivers.Lego.IrRc.Advanced;
+using Gma.Netmf.Hardware.Lego.IrRc.Commands;
 
 #endregion
 
 
 
-namespace Gma.Drivers.Lego.IrRc.Internal
+namespace Gma.Netmf.Hardware.Lego.IrRc.Internal
 {
     internal class SingleOutputMsg : Message
     {

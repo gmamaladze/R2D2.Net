@@ -36,23 +36,6 @@
   </PropertyGroup>
   <Import Project="$(NetMfTargetsBaseDir)$(TargetFrameworkVersion)\CSharp.Targets" />
   <ItemGroup>
-    <Compile Include="Drivers\LegoInfrared\Channel.cs" />
-    <Compile Include="Drivers\LegoInfrared\ComboDirectModeCommand.cs" />
-    <Compile Include="Drivers\LegoInfrared\Internal\ComboDirectModeMessage.cs" />
-    <Compile Include="Drivers\LegoInfrared\Transmitter.cs" />
-    <Compile Include="Drivers\LegoInfrared\ComboPwmModeCommand.cs" />
-    <Compile Include="Drivers\LegoInfrared\Internal\ComboPwmModeMessage.cs" />
-    <Compile Include="Drivers\LegoInfrared\Command.cs" />
-    <Compile Include="Drivers\LegoInfrared\Internal\Escape.cs" />
-    <Compile Include="Drivers\LegoInfrared\Internal\IrPulse.cs" />
-    <Compile Include="Drivers\LegoInfrared\Internal\IrPulseEncoder.cs" />
-    <Compile Include="Drivers\LegoInfrared\Internal\Message.cs" />
-    <Compile Include="Drivers\LegoInfrared\Internal\Output.cs" />
-    <Compile Include="Drivers\LegoInfrared\_legacy\RemoteControlMode.cs" />
-    <Compile Include="Drivers\LegoInfrared\Internal\SingleOutputModeMessage.cs" />
-    <Compile Include="Drivers\LegoInfrared\ComboDirectState.cs" />
-    <Compile Include="Drivers\LegoInfrared\_legacy\RemoteControl.cs" />
-    <Compile Include="Drivers\LegoInfrared\Internal\Toggle.cs" />
     <Compile Include="Ping.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
@@ -68,5 +51,10 @@
     <Reference Include="SecretLabs.NETMF.Hardware.Netduino" />
     <Reference Include="System" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Gma.Drivers.Lego.IrRc\Gma.Netmf.Hardware.Lego.IrRc.csproj">
+      <Project>{DE7221E0-F7D2-4263-97F6-DEE1819AD2D6}</Project>
+      <Name>Gma.Netmf.Hardware.Lego.IrRc</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

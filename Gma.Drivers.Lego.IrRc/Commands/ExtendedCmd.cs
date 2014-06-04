@@ -1,4 +1,4 @@
-namespace Gma.Drivers.Lego.IrRc.Advanced
+namespace Gma.Netmf.Hardware.Lego.IrRc.Commands
 {
     public class ExtendedCmd : Command
     {

@@ -8,8 +8,13 @@ using System;
 
 #endregion
 
-namespace Gma.Drivers.Lego.IrRc.Internal
+namespace Gma.Netmf.Hardware.Lego.IrRc.Internal
 {
+ 
+    /// <summary>
+    /// This class is responsible for translating data packages into 
+    /// 38 kHz infrared light pulses. 
+    /// </summary>
     internal static class IrPulseEncoder
     {
         private const short MaxEncodedMessageSize = 522;

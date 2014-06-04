@@ -2,9 +2,9 @@
 // Copyright (c) 2014 George Mamaladze
 // See license.txt or http://opensource.org/licenses/mit-license.php
 
-using Gma.Drivers.Lego.IrRc.Internal;
+using Gma.Netmf.Hardware.Lego.IrRc.Internal;
 
-namespace Gma.Drivers.Lego.IrRc.Advanced
+namespace Gma.Netmf.Hardware.Lego.IrRc.Commands
 {
     public class SingleOutputCmd : Command
     {

@@ -4,27 +4,35 @@
 
 #region usings
 
-using Gma.Drivers.Lego.IrRc.Advanced;
-using Gma.Drivers.Lego.IrRc.Internal;
+using System;
+using Gma.Netmf.Hardware.Lego.IrRc.Commands;
 
 #endregion
 
-namespace Gma.Drivers.Lego.IrRc
+namespace Gma.Netmf.Hardware.Lego.IrRc
 {
-    //TODO Make disposable
-    public class RemoteControl
+    public class RemoteControl : IDisposable
     {
         private readonly CommandProcessor m_CommandProcessor;
+        private readonly bool m_DisposeCommandProcessor;
 
         public RemoteControl(Channel channel)
-            : this(new CommandProcessor(channel))
+            : this(new CommandProcessor(channel), true)
         {
-            
         }
 
-        public RemoteControl(CommandProcessor commandProcessor)
+        public RemoteControl(CommandProcessor commandProcessor, bool disposeCommandProcessor)
         {
             m_CommandProcessor = commandProcessor;
+            m_DisposeCommandProcessor = disposeCommandProcessor;
+        }
+
+        public void Dispose()
+        {
+            if (m_DisposeCommandProcessor)
+            {
+                m_CommandProcessor.Dispose();
+            }
         }
 
         public void Execute(ExtFunction extFunction)

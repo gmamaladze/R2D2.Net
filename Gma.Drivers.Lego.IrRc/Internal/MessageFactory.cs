@@ -5,11 +5,11 @@
 #region usings
 
 using System;
-using Gma.Drivers.Lego.IrRc.Advanced;
+using Gma.Netmf.Hardware.Lego.IrRc.Commands;
 
 #endregion
 
-namespace Gma.Drivers.Lego.IrRc.Internal
+namespace Gma.Netmf.Hardware.Lego.IrRc.Internal
 {
     internal static class MessageFactory
     {
@@ -19,13 +19,13 @@ namespace Gma.Drivers.Lego.IrRc.Internal
             switch (commandType)
             {
                 case CommandType.Extended:
-                    throw new NotImplementedException();
+                    return new ExtendedMsg(channel, toggle, (ExtendedCmd)command);
                 case CommandType.ComboDirect:
-                    return new ComboDirectMsg(channel, toggle, command);
+                    return new ComboDirectMsg(channel, toggle, (ComboDirectCmd)command);
                 case CommandType.SingleOutput:
-                    throw new NotImplementedException();
+                    return new SingleOutputMsg(channel, toggle, (SingleOutputCmd)command);
                 case CommandType.CompboPwm:
-                    return new ComboPwmMsg(channel, toggle, command);
+                    return new ComboPwmMsg(channel, toggle, (ComboPwmCmd)command);
                 default:
                     throw new NotSupportedException();
             }

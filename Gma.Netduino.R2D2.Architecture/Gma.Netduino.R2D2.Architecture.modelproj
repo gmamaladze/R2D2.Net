@@ -94,8 +94,8 @@
     </Validate>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Gma.Drivers.Lego.IrRc\Gma.Drivers.Lego.IrRc.csproj">
-      <Name>Gma.Drivers.Lego.IrRc</Name>
+    <ProjectReference Include="..\Gma.Drivers.Lego.IrRc\Gma.Netmf.Hardware.Lego.IrRc.csproj">
+      <Name>Gma.Netmf.Hardware.Lego.IrRc</Name>
       <Project>{de7221e0-f7d2-4263-97f6-dee1819ad2d6}</Project>
     </ProjectReference>
   </ItemGroup>

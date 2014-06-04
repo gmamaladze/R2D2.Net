@@ -4,13 +4,13 @@
 
 #region usings
 
-using Gma.Drivers.Lego.IrRc.Advanced;
+using Gma.Netmf.Hardware.Lego.IrRc.Commands;
 
 #endregion
 
 
 
-namespace Gma.Drivers.Lego.IrRc.Internal
+namespace Gma.Netmf.Hardware.Lego.IrRc.Internal
 {
     internal class ComboDirectMsg : Message
     {
@@ -23,10 +23,10 @@ namespace Gma.Drivers.Lego.IrRc.Internal
 
         private readonly ComboDirectCmd m_Command;
 
-        public ComboDirectMsg(Channel channel, Toggle toggle, Command command)
+        public ComboDirectMsg(Channel channel, Toggle toggle, ComboDirectCmd command)
             : base(channel, toggle)
         {
-            m_Command = (ComboDirectCmd) command;
+            m_Command = command;
         }
 
         public override Escape Escape

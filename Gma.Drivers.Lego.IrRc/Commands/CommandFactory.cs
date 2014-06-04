@@ -1,4 +1,4 @@
-namespace Gma.Drivers.Lego.IrRc.Advanced
+namespace Gma.Netmf.Hardware.Lego.IrRc.Commands
 {
     public class CommandFactory
     {
@@ -25,11 +25,6 @@ namespace Gma.Drivers.Lego.IrRc.Advanced
         public static Command Create(Output output, PwmSpeed speed)
         {
             return new SingleOutputCmd(output, speed);
-        }
-
-        public static Command Create(int milliseconds)
-        {
-            return new PauseCmd(milliseconds);
         }
     }
 }

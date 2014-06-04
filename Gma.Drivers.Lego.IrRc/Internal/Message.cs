@@ -6,7 +6,7 @@
 
 #endregion
 
-namespace Gma.Drivers.Lego.IrRc.Internal
+namespace Gma.Netmf.Hardware.Lego.IrRc.Internal
 {
     /// <summary>
     ///     Accomodates common code for all types of messages.

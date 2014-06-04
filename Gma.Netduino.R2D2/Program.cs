@@ -6,7 +6,7 @@
 
 using System;
 using System.Threading;
-using Gma.Netduino.R2D2.Drivers.LegoInfrared;
+using Gma.Netmf.Hardware.Lego.IrRc;
 using Microsoft.SPOT;
 using Microsoft.SPOT.Hardware;
 using SecretLabs.NETMF.Hardware.Netduino;
@@ -27,14 +27,14 @@ namespace Gma.Netduino.R2D2
             var wheelPositions = new byte[] {9, 10, 11, 12, 13, 14, 15, 8, 1, 2, 3, 4, 5, 6, 7};
 
             using (var port = new TristatePort(Pins.GPIO_PIN_D0, false, false, ResistorModes.Disabled))
-            using (var transmitter = new Transmitter())
+            using (var remoteControl = new RemoteControl(Channel.Ch1))
                 while (true)
                 {
                     double maxDistance = double.MinValue;
                     for (int index = 0; index < sonarPositions.Length; index++)
                     {
                         var pos = sonarPositions[index];
-                        transmitter.Execute(new ComboPwmModeCommand(8, pos), Channel.Ch1);
+                        remoteControl.Execute(PwmSpeed.BreakThenFloat, (PwmSpeed)pos);
                         var distance = GetDistance(port);
                         Debug.Print(pos + " - " + distance);
                         if (distance > maxDistance)
@@ -47,16 +47,16 @@ namespace Gma.Netduino.R2D2
                     if (maxDistance < 0.25)
                     {
                         var randomDirection = (byte) (random.Next(14) + 1);
-                        transmitter.Execute(new ComboPwmModeCommand(13, randomDirection), Channel.Ch1);
+                        remoteControl.Execute(PwmSpeed.BackwardStep3, (PwmSpeed)randomDirection);
                         Thread.Sleep(500);
                         continue;
                     }
 
                     var wheelPos = wheelPositions[bestIndex];
 
-                    transmitter.Execute(new ComboPwmModeCommand(3, wheelPos), Channel.Ch1);
+                    remoteControl.Execute(PwmSpeed.ForwardStep3, (PwmSpeed)wheelPos);
                     Thread.Sleep(200);
-                    transmitter.Execute(new ComboPwmModeCommand(3, 8), Channel.Ch1);
+                    remoteControl.Execute(PwmSpeed.ForwardStep3, PwmSpeed.BreakThenFloat);
                     Thread.Sleep(500);
                 }
         }

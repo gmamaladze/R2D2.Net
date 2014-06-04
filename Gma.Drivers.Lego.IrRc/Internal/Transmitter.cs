@@ -10,7 +10,7 @@ using Microsoft.SPOT.Hardware;
 
 #endregion
 
-namespace Gma.Drivers.Lego.IrRc.Internal
+namespace Gma.Netmf.Hardware.Lego.IrRc.Internal
 {
     internal class Transmitter : IDisposable
     {

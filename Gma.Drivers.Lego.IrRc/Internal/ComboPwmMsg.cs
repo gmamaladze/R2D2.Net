@@ -4,13 +4,13 @@
 
 #region usings
 
-using Gma.Drivers.Lego.IrRc.Advanced;
+using Gma.Netmf.Hardware.Lego.IrRc.Commands;
 
 #endregion
 
 
 
-namespace Gma.Drivers.Lego.IrRc.Internal
+namespace Gma.Netmf.Hardware.Lego.IrRc.Internal
 {
     internal class ComboPwmMsg : Message
     {
@@ -23,10 +23,10 @@ namespace Gma.Drivers.Lego.IrRc.Internal
 
         private readonly ComboPwmCmd m_Command;
 
-        public ComboPwmMsg(Channel channel, Toggle toggle, Command command)
+        public ComboPwmMsg(Channel channel, Toggle toggle, ComboPwmCmd command)
             : base(channel, toggle)
         {
-            m_Command = (ComboPwmCmd) command;
+            m_Command = command;
         }
 
         public override Escape Escape

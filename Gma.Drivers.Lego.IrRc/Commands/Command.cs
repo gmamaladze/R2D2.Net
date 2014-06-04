@@ -2,14 +2,10 @@
 // Copyright (c) 2014 George Mamaladze
 // See license.txt or http://opensource.org/licenses/mit-license.php
 
-namespace Gma.Drivers.Lego.IrRc.Advanced
+namespace Gma.Netmf.Hardware.Lego.IrRc.Commands
 {
-    public enum CommandType
+    public abstract class Command
     {
-        Extended,
-        ComboDirect,
-        SingleOutput,
-        CompboPwm,
-        Pause
+        public abstract CommandType CommandType { get; }
     }
 }

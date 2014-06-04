@@ -1,15 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <AssemblyName>Gma.Drivers.Lego.IrRc</AssemblyName>
+    <AssemblyName>Gma.Netmf.Hardware.Lego.IrRc</AssemblyName>
     <OutputType>Library</OutputType>
-    <RootNamespace>Gma.Drivers.Lego.IrRc</RootNamespace>
+    <RootNamespace>Gma.Netmf.Hardware.Lego.IrRc</RootNamespace>
     <ProjectTypeGuids>{b69e3092-b931-443c-abe7-7e7b65f2a37f};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{DE7221E0-F7D2-4263-97F6-DEE1819AD2D6}</ProjectGuid>
-    <TargetFrameworkVersion>v4.3</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.2</TargetFrameworkVersion>
     <NetMfTargetsBaseDir Condition="'$(NetMfTargetsBaseDir)'==''">$(MSBuildExtensionsPath32)\Microsoft\.NET Micro Framework\</NetMfTargetsBaseDir>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,24 +31,26 @@
   </PropertyGroup>
   <Import Project="$(NetMfTargetsBaseDir)$(TargetFrameworkVersion)\CSharp.Targets" />
   <ItemGroup>
+    <Compile Include="Actuators\Actuator.cs" />
+    <Compile Include="Actuators\Connector.cs" />
+    <Compile Include="Actuators\Motor.cs" />
+    <Compile Include="Actuators\PwmSpeedExtensions.cs" />
+    <Compile Include="Actuators\Servo.cs" />
     <Compile Include="Channel.cs" />
-    <Compile Include="Advanced\CommandFactory.cs" />
-    <Compile Include="Advanced\CommandProcessor.cs" />
-    <Compile Include="Queue\CommandQueue.cs" />
+    <Compile Include="Commands\CommandFactory.cs" />
+    <Compile Include="Commands\CommandProcessor.cs" />
     <Compile Include="IncDec.cs" />
-    <Compile Include="Advanced\ExtendedCmd.cs" />
+    <Compile Include="Commands\ExtendedCmd.cs" />
     <Compile Include="Internal\ExtendedMsg.cs" />
-    <Compile Include="Advanced\ExtFunction.cs" />
+    <Compile Include="ExtFunction.cs" />
     <Compile Include="Internal\SingleOutputMode.cs" />
-    <Compile Include="Queue\OnFinishedEventArgs.cs" />
-    <Compile Include="Queue\OnFinishedEventHandler.cs" />
-    <Compile Include="Advanced\PauseCmd.cs" />
+    <Compile Include="Actuators\Receiver.cs" />
     <Compile Include="PwmSpeed.cs" />
-    <Compile Include="Advanced\CommandType.cs" />
-    <Compile Include="Advanced\ComboDirectCmd.cs" />
+    <Compile Include="Commands\CommandType.cs" />
+    <Compile Include="Commands\ComboDirectCmd.cs" />
     <Compile Include="DirectState.cs" />
-    <Compile Include="Advanced\ComboPwmCmd.cs" />
-    <Compile Include="Advanced\Command.cs" />
+    <Compile Include="Commands\ComboPwmCmd.cs" />
+    <Compile Include="Commands\Command.cs" />
     <Compile Include="RemoteControl.cs" />
     <Compile Include="Internal\ComboDirectMsg.cs" />
     <Compile Include="Internal\ComboPwmMsg.cs" />
@@ -59,10 +62,9 @@
     <Compile Include="Internal\SingleOutputMsg.cs" />
     <Compile Include="Internal\Toggle.cs" />
     <Compile Include="Internal\MessageFactory.cs" />
-    <Compile Include="Advanced\SingleOutputCmd.cs" />
+    <Compile Include="Commands\SingleOutputCmd.cs" />
     <Compile Include="Internal\Transmitter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Queue\Task.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.SPOT.Hardware" />

@@ -1,6 +1,6 @@
-using Gma.Drivers.Lego.IrRc.Advanced;
+using Gma.Netmf.Hardware.Lego.IrRc.Commands;
 
-namespace Gma.Drivers.Lego.IrRc.Internal
+namespace Gma.Netmf.Hardware.Lego.IrRc.Internal
 {
     internal class ExtendedMsg : Message
     {
