@@ -5,6 +5,7 @@
 #region usings
 
 using System;
+using Gma.Drivers.Lego.IrRc.Advanced;
 
 #endregion
 

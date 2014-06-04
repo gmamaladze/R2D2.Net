@@ -7,6 +7,7 @@
 using System;
 using System.Threading;
 using Gma.Netduino.R2D2.Drivers.LegoInfrared;
+using Microsoft.SPOT;
 using Microsoft.SPOT.Hardware;
 using SecretLabs.NETMF.Hardware.Netduino;
 
@@ -20,55 +21,57 @@ namespace Gma.Netduino.R2D2
 
         public static void Main()
         {
-            var random = new Random(DateTime.Now.Millisecond);
+            var random = new Random();
+            int bestIndex = 0;
+            var sonarPositions = new byte[] {7, 6, 5, 4, 3, 2, 1, 8, 15, 14, 13, 12, 11, 10, 9};
+            var wheelPositions = new byte[] {9, 10, 11, 12, 13, 14, 15, 8, 1, 2, 3, 4, 5, 6, 7};
+
             using (var port = new TristatePort(Pins.GPIO_PIN_D0, false, false, ResistorModes.Disabled))
             using (var transmitter = new Transmitter())
                 while (true)
                 {
-                    var distance = GetDistance(port);
-                    var vector = distance - 0.5;
-                    var sign = Math.Sign(vector);
-                    var value = Math.Abs(vector);
-                    var wheel = random.Next(14)+1;
-
-
-                    byte speed;
-                    if (distance < 1)
+                    double maxDistance = double.MinValue;
+                    for (int index = 0; index < sonarPositions.Length; index++)
                     {
-                        speed = 2;
-                    }
-                    else
-                    {
-                        speed = 3;
+                        var pos = sonarPositions[index];
+                        transmitter.Execute(new ComboPwmModeCommand(8, pos), Channel.Ch1);
+                        var distance = GetDistance(port);
+                        Debug.Print(pos + " - " + distance);
+                        if (distance > maxDistance)
+                        {
+                            maxDistance = distance;
+                            bestIndex = index;
+                        }
                     }
 
-                    if (distance < 0.50)
+                    if (maxDistance < 0.25)
                     {
-                        wheel = (random.Next(1) == 0) ? 7 : 9;
-                        transmitter.Execute(new ComboPwmModeCommand(9, (byte)wheel), Channel.Ch1);
-                        Thread.Sleep(1000);
-                     
+                        var randomDirection = (byte) (random.Next(14) + 1);
+                        transmitter.Execute(new ComboPwmModeCommand(13, randomDirection), Channel.Ch1);
+                        Thread.Sleep(500);
+                        continue;
                     }
-                    else
-                    {
-                        var command = new ComboPwmModeCommand(speed, (byte)wheel);
-                        transmitter.Execute(command, Channel.Ch1);
-                        Thread.Sleep(5);
-                    }
+
+                    var wheelPos = wheelPositions[bestIndex];
+
+                    transmitter.Execute(new ComboPwmModeCommand(3, wheelPos), Channel.Ch1);
+                    Thread.Sleep(200);
+                    transmitter.Execute(new ComboPwmModeCommand(3, 8), Channel.Ch1);
+                    Thread.Sleep(500);
                 }
         }
 
-        private static double GetDistance(TristatePort _port)
+        private static double GetDistance(TristatePort port)
         {
-            _port.Active = true;
-            _port.Write(true);
-            _port.Write(false);
-            _port.Active = false;
+            port.Active = true;
+            port.Write(true);
+            port.Write(false);
+            port.Active = false;
             bool lineState = false;
-            while (!lineState) lineState = _port.Read();
+            while (!lineState) lineState = port.Read();
             var startOfPulseAt = DateTime.Now;
 
-            while (lineState) lineState = _port.Read();
+            while (lineState) lineState = port.Read();
             var endOfPulse = DateTime.Now;
 
             double intervalSeconds = (double) (endOfPulse - startOfPulseAt).Ticks/TimeSpan.TicksPerSecond;

@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="87dffe9d-8210-47bd-9ef6-5c43a118208b"
+  name="Hardware"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="ea5e78bd-c06b-41a3-b512-92d8239f7452"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DMicrosoft.SPOT.Hardware"
+      tag="ViewCode" />
+  </referencesInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="327ed75c-5c10-4d7a-82e7-0d222981299c">
+      <profileInstance
+        Id="3b897cd5-ba2c-4d53-b2c2-a85ac4f4bde0"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <enumeration
+        Id="adf1f89e-9c23-4ba9-8e88-99e1da3893e1"
+        name="Pin"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="fb10d513-6d77-4280-96bf-c9ed83b1a3db"
+            handle="viewcode://./CodeSchema_Enum?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft .NET Micro Framework%2Fv4.3%2FAssemblies%2Fle%2FMicrosoft.SPOT.Hardware.dll&quot; Namespace%3DMicrosoft.SPOT.Hardware Type%3D(Name%3DPin ParentType%3DCpu)"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="98764130-55c4-4bc2-95be-5926c3ff4083"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2abfa642-c9fc-41fb-8ede-2d2047cdc5b8">
+                <propertyInstance
+                  Id="c712e333-3f8d-480e-815e-58755f070134"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cd0ed903-f6ba-4ba6-8f52-3f57dab79cd6">
+                <propertyInstance
+                  Id="9bfdb924-0306-4147-85e6-4d7a9fdd24dc"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="05d0d92d-c34d-49cf-ba8a-a21c24e29c15">
+                <propertyInstance
+                  Id="3ae06f6b-284a-4c7d-96f7-cee56868c1d3"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7194f063-3e6f-4378-be88-ab90ec77c7d3"
+        name="SPI"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="d6efbf9b-8df7-4fe4-aed4-c4dd80e69af6"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft .NET Micro Framework%2Fv4.3%2FAssemblies%2Fle%2FMicrosoft.SPOT.Hardware.dll&quot; Namespace%3DMicrosoft.SPOT.Hardware Type%3DSPI"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="2f21f604-5529-45cf-94b0-65321b15819e"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0c69af6f-73cd-465b-bd94-8141ac87ef03">
+                <propertyInstance
+                  Id="b6f7ff5d-1ff7-4059-992e-80cd4d51d13f"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e2b2b77d-1460-49ef-a270-40e350ae2827">
+                <propertyInstance
+                  Id="fb930843-1d3a-42ae-8e8f-53fdeed42c07"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e85220d7-a62e-4bcf-b3e4-b60dddbef6d0">
+                <propertyInstance
+                  Id="d7e2768f-a8b5-4182-b880-883e67eccb98"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6d54db31-1fc3-4c7f-ae1a-b7a6656fbf4d">
+                <propertyInstance
+                  Id="29b40663-b038-40b6-b8bc-c0d3fd0ca203"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ae182305-35b0-4b68-8de8-7a9f560a536d">
+                <propertyInstance
+                  Id="cbaebdfa-d0e0-414c-a6b8-5f90c64c560a"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="2a5270f5-d92d-4809-93ff-c22ca99dff91">
+            <interfaceMoniker
+              Id="79d47e57-3020-43e4-9dc3-6bd786852966"
+              LastKnownName="IDisposable"
+              LastKnownLocation="Package6_1335.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

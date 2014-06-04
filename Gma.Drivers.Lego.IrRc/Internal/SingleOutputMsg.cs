@@ -4,31 +4,36 @@
 
 #region usings
 
-using System;
+using Gma.Drivers.Lego.IrRc.Advanced;
 
 #endregion
+
+
 
 namespace Gma.Drivers.Lego.IrRc.Internal
 {
     internal class SingleOutputMsg : Message
     {
-        public SingleOutputMsg(Channel channel, Toggle toggle) : base(channel, toggle)
+        private readonly SingleOutputCmd m_Command;
+
+        public SingleOutputMsg(Channel channel, Toggle toggle, SingleOutputCmd command) : base(channel, toggle)
         {
+            m_Command = command;
         }
 
         public override Escape Escape
         {
-            get { throw new NotImplementedException(); }
+            get { return Escape.UseMode; }
         }
 
         protected override int GetNiblle2()
         {
-            throw new NotImplementedException();
+            return 1 << 2 | (int) m_Command.SingleOutputMode << 1 | (int) m_Command.Output;
         }
 
         protected override int GetNiblle3()
         {
-            throw new NotImplementedException();
+            return m_Command.Data;
         }
     }
 }

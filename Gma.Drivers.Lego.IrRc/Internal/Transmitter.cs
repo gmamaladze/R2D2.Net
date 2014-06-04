@@ -6,29 +6,39 @@
 
 using System;
 using System.Threading;
-using Gma.Drivers.Lego.IrRc.Internal;
 using Microsoft.SPOT.Hardware;
 
 #endregion
 
-namespace Gma.Drivers.Lego.IrRc
+namespace Gma.Drivers.Lego.IrRc.Internal
 {
-    public class Transmitter : IDisposable
+    internal class Transmitter : IDisposable
     {
-        private readonly SPI m_Spi;
-        private readonly bool m_DisposeSpi;
         private const int MessageResendCount = 5;
-        private readonly Toggle[] m_Toggle;
+        private readonly bool m_DisposeSpi;
+        private readonly SPI m_Spi;
 
         public Transmitter() : this(Cpu.Pin.GPIO_NONE)
         {
-            
         }
 
         public Transmitter(Cpu.Pin enablePin)
             : this(CreateSpi(enablePin), true)
         {
-            
+        }
+
+        public Transmitter(SPI spi, bool disposeSpi)
+        {
+            m_Spi = spi;
+            m_DisposeSpi = disposeSpi;
+        }
+
+        public void Dispose()
+        {
+            if (m_DisposeSpi && m_Spi != null)
+            {
+                m_Spi.Dispose();
+            }
         }
 
         private static SPI CreateSpi(Cpu.Pin enablePin)
@@ -53,41 +63,7 @@ namespace Gma.Drivers.Lego.IrRc
             return new SPI(config);
         }
 
-        public Transmitter(SPI spi, bool disposeSpi)
-        {
-            m_Spi = spi;
-            m_DisposeSpi = disposeSpi;
-            m_Toggle = new[]
-            {
-                Toggle.Even,
-                Toggle.Even,
-                Toggle.Even,
-                Toggle.Even
-            };
-        }
-
-        public void Execute(Command command, Channel channel)
-        {
-            var toggle = GetToggle(channel);
-            var message = MessageFactory.GetMessage(command, channel, toggle);
-            Send(message);
-            TriggerToggle(channel);
-        }
-
-        private Toggle GetToggle(Channel channel)
-        {
-            var channelIndex = (byte) channel;
-            return m_Toggle[channelIndex];
-        }
-
-        private void TriggerToggle(Channel channel)
-        {
-            var channelIndex = (byte)channel;
-            var current = m_Toggle[channelIndex];
-            m_Toggle[channelIndex] = (current == Toggle.Even) ? Toggle.Odd : Toggle.Even ;
-        }
-
-        private void Send(Message message)
+        public void Send(Message message)
         {
             var rawData = message.GetData();
             var channel = message.Channel;
@@ -113,7 +89,7 @@ namespace Gma.Drivers.Lego.IrRc
             switch (resendIndex)
             {
                 case 0:
-                    milliseconds = 4 - (int)channel + 1;
+                    milliseconds = 4 - (int) channel + 1;
                     break;
                 case 2:
                 case 1:
@@ -121,20 +97,12 @@ namespace Gma.Drivers.Lego.IrRc
                     break;
                 case 4:
                 case 3:
-                    milliseconds = 5 + ((int)channel + 1) * 2;
+                    milliseconds = 5 + ((int) channel + 1)*2;
                     break;
             }
 
             // Tm = 16 ms (in theory 13.7 ms)
-            Thread.Sleep(milliseconds * 16);
-        }
-
-        public void Dispose()
-        {
-            if (m_DisposeSpi && m_Spi != null)
-            {
-                m_Spi.Dispose();
-            }
+            Thread.Sleep(milliseconds*16);
         }
     }
 }

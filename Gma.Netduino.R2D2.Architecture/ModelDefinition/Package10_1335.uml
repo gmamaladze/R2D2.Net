@@ -1,0 +1,2385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="227cfd5c-53f5-4275-88aa-69c16a119836"
+  name="Queue"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="8dc85196-14b8-43de-bd72-403256e535b6"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DGma.Drivers.Lego.IrRc.Queue"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="6dba23d6-c5bb-46af-afb3-305e32627c0e"
+        name="CommandQueue"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="f4a04969-1c49-4bb7-878b-de06fa7ec79d"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DCommandQueue"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="2cef6682-7b55-465c-b562-0a01ce134a8d"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e4965819-ab07-48c5-b024-68f6a3a88404">
+                <propertyInstance
+                  Id="433eeabd-7e78-4667-a020-5da0b5f6dc89"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c2256e32-68c3-4fb0-9eb8-9b096d188ed8">
+                <propertyInstance
+                  Id="c2aa0c98-9770-42a7-8590-00fd7288f296"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0eff0c86-6701-4908-a468-4d85ce23a2c4">
+                <propertyInstance
+                  Id="bb4dbf9e-165b-4321-8bbd-5bde1211c629"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9d7c3962-0653-4b6e-83dd-63d9fec05e8f">
+                <propertyInstance
+                  Id="52f7997f-1989-40a3-b1b3-4e29c9bec6b5"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ab7096f2-0631-445e-9e3f-b5d3945f5e60">
+                <propertyInstance
+                  Id="e9f3af3a-339b-4ffc-b89e-580ac9d4e02a"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="1e1aca7f-df3f-4827-a829-7a50e4badb2d"
+            name="m_CommandProcessor"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="cc312b14-34fe-4e4e-b289-04bbf475edae"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DCommandQueue Member%3Dm_CommandProcessor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9f7f93ad-8ceb-439e-b7b5-18efe5803b02"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="017dea1e-fa08-48ac-8943-f819345fbe1c">
+                    <propertyInstance
+                      Id="7cea0022-8385-49d8-a984-4741cf1f9ac4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0f521951-643f-4ca6-87b0-bfd96042f214">
+                    <propertyInstance
+                      Id="232b8910-5dc8-48b2-b1b6-d91ade537b69"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c0e104c3-e56b-478e-b512-abd8d123bd34">
+                    <propertyInstance
+                      Id="facf57f3-fec0-4453-91fb-dd73ccc330d1"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7d599c71-cc65-4e2c-ba69-896f6f228f6e">
+                    <propertyInstance
+                      Id="f049134c-da8f-4e04-b9f5-d71e3208fe4d"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d7f8f1e1-b231-481c-ada9-b7257e3081de">
+                    <propertyInstance
+                      Id="f23256ed-6933-4bfb-b91e-2887fbe8cada"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="68ae9bd7-84a2-4a41-aae9-772cc9e975ed"
+                LastKnownName="CommandProcessor"
+                LastKnownLocation="Package4_1335.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="51199573-2c7c-4011-92f6-4062371383e0"
+            name="m_Queue"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="c90d3bb0-ce5f-488c-afd9-f8059bec62f2"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DCommandQueue Member%3Dm_Queue"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8600bdd8-8216-445f-864f-7a462aee3f47"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7ee62618-6d41-4280-9fe7-bcecc2b5af97">
+                    <propertyInstance
+                      Id="0b567871-456e-408f-b84f-ba0c33d2f811"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="edb5cf89-1e81-446a-8a48-a717fe21fce3">
+                    <propertyInstance
+                      Id="4e3ee232-4789-4607-9352-174727342f5a"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b606edb4-c9bb-4048-84c9-5c0d8a0cd34e">
+                    <propertyInstance
+                      Id="de746581-62d2-4969-a80f-657111fb9c1a"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2b2c3f99-abc5-4d7a-834b-a4e09eb01da7">
+                    <propertyInstance
+                      Id="0afb54e5-a8e6-4b51-ae30-54b0e94711f4"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7d1224c5-4cdb-466b-838c-ee169d5e96eb">
+                    <propertyInstance
+                      Id="a801cb3d-f1d3-4d85-bb34-db0998b27cb8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="85e27da2-b983-4d7e-99e4-d24612d78010"
+                LastKnownName="Queue"
+                LastKnownLocation="Package11_1335.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="c956444f-6482-4ea4-8036-e4b009a7a757"
+            name="CommandQueue"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="b4bb09e3-138e-4fc2-bf1a-6201bb966efe"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DCommandQueue Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DChannel)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a0f4a5d2-0d1a-4482-a17c-1cef64febd1c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="23635b62-0aee-47cc-8e06-be7b84fffef3">
+                    <propertyInstance
+                      Id="8ef71ec5-b9d8-43ac-9879-735d51b07aba"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e4f732e3-eb38-41ca-8e2d-77a5823d1923">
+                    <propertyInstance
+                      Id="7aedfa43-c512-473d-9287-c5835d6ca1a3"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="26462d2d-5c47-4ca3-8f24-d142c1f9456a">
+                    <propertyInstance
+                      Id="07296a15-77d3-4c63-99ff-17a4aa329476"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8b77ec65-d77f-4e86-a11e-371696ac4cf0">
+                    <propertyInstance
+                      Id="633e5e05-1c8c-45ab-9263-baeedbed6331"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5d283f3f-709e-48f7-a2eb-244b8b9727ce">
+                    <propertyInstance
+                      Id="ea9c88f4-b6b8-4ee1-97e2-8ae2ce5d735a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f84a531b-007b-4453-bcc4-0888c6e104e8">
+                    <propertyInstance
+                      Id="9d3c1aa5-0d02-4579-9dd0-72363eed1ee9"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0c82248d-de61-4fb6-a54d-549b17699a6c"
+                  name="channel"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="e3fabe6e-f0cb-4f0e-8baa-3c82abd4c055"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DCommandQueue Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DChannel)]) ParameterIdentifier%3Dchannel"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="b2cbbdf4-1b06-4708-b004-08f0024fa208"
+                      LastKnownName="Channel"
+                      LastKnownLocation="Package3_1335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="e02e434d-0027-4472-a77b-fd7b2cc95dc1"
+            name="CommandQueue"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="ea133e1e-938b-47db-8e12-3eb78bdca75d"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DCommandQueue Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Advanced Type%3DCommandProcessor)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f3476641-6f4f-47ec-8deb-d36e0a78c2fb"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ffa93780-443f-4594-94c4-e8a956639445">
+                    <propertyInstance
+                      Id="fd3ec3e7-2b6d-458c-bf42-64db0f23f105"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d1caf679-6dd7-4046-b5a4-fbd8036bd85d">
+                    <propertyInstance
+                      Id="71efb7c3-ca23-46a7-b7df-9bdbaea83faa"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d315f318-a0f5-4202-afbd-58632d4d87c4">
+                    <propertyInstance
+                      Id="c99730ac-b930-4db7-8511-aa28396aeba8"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="84b066aa-c624-40ad-8f38-d5d0210d5df8">
+                    <propertyInstance
+                      Id="e8e03dbd-e0ce-4cae-b9bc-4a0b7d71c866"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5163b6b2-0ab5-4828-8bbf-e4ee8d2a2f16">
+                    <propertyInstance
+                      Id="c1750252-c2ab-401f-ba8b-cfc6a585e7c8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5ed557ae-8b23-4fde-8699-62dc41cd4379">
+                    <propertyInstance
+                      Id="ef6d2eb2-01d6-4e9d-8857-5fed2163c214"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="83b90241-9e4b-4c59-bb2f-c7b7dab74be4"
+                  name="commandProcessor"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="07403774-d1d5-4ba1-82f3-e423a25997e1"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DCommandQueue Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Advanced Type%3DCommandProcessor)]) ParameterIdentifier%3DcommandProcessor"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="68ae9bd7-84a2-4a41-aae9-772cc9e975ed"
+                      LastKnownName="CommandProcessor"
+                      LastKnownLocation="Package4_1335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="f6ceda62-fbba-4626-839e-e97f654c1e43"
+            name="Create"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="fd2466b4-2b81-4dcd-975b-773619cf9470"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DCommandQueue Member%3D(Name%3DCreate OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DChannel)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f11d64b9-d50e-48e9-9334-cda45b318610"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9034c2a0-13a6-426a-9ec5-950b7603713e">
+                    <propertyInstance
+                      Id="c3785492-18c0-4681-9385-0a4f29abb15e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a0d2cb7b-9ffe-4ec7-9d53-24cf2bc147d3">
+                    <propertyInstance
+                      Id="a5f17528-6534-4d3b-9633-35422ae3ff04"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1c156ff5-d189-4220-98ca-d122878550bc">
+                    <propertyInstance
+                      Id="cc528eec-c095-4cb1-8840-176c493b85e1"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fef210c7-9b87-4389-b6f9-9efbb22bb065">
+                    <propertyInstance
+                      Id="8c72d3c0-fcee-468e-ab3f-3aa1469ee04f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6d20698b-a7f6-4217-9a66-a332ac07c6a8">
+                    <propertyInstance
+                      Id="df159031-0fbc-401e-8f55-ca1cec769337"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b67d80ba-156d-4dc9-ad13-73cf23de6a86">
+                    <propertyInstance
+                      Id="5e88d764-5389-44a2-b4db-7e8f63c8e25f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2becc096-4cb5-4938-882b-321907b17197"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="6dba23d6-c5bb-46af-afb3-305e32627c0e"
+                      LastKnownName="CommandQueue"
+                      LastKnownLocation="Package10_1335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="63a00df2-2190-42ef-b511-7c3d08132575"
+                  name="channel"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="c31c7535-5c54-47d5-b400-63a5d0bc2534"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DCommandQueue Member%3D(Name%3DCreate OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DChannel)]) ParameterIdentifier%3Dchannel"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="b2cbbdf4-1b06-4708-b004-08f0024fa208"
+                      LastKnownName="Channel"
+                      LastKnownLocation="Package3_1335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4b2a35cc-ada0-4eb5-8813-aa44dd5c4832"
+            name="Enqueue"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="4d10d5f4-38ac-4c42-a453-298534619459"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DCommandQueue Member%3D(Name%3DEnqueue OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Advanced Type%3DCommand)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="dce9d417-2cdc-464d-8b56-314c1e5601a0"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="de1670fa-3a84-466e-bc3d-5d6c3e64123f">
+                    <propertyInstance
+                      Id="bec7434c-2dfb-426f-8cd7-500b210ebdff"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9f861945-71cf-496c-bd74-657283dfafab">
+                    <propertyInstance
+                      Id="23ae4ac4-94c2-4a49-934e-a7962dc6fcbc"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a821c3fe-5be4-4ab2-835b-ed0524109546">
+                    <propertyInstance
+                      Id="6b6c78b0-bc2c-4451-9081-ab52a0a467d6"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f5d7f2cb-2870-4b3d-b602-0e73232a3c9c">
+                    <propertyInstance
+                      Id="c8a4da56-7b55-4a21-ab42-06d71cfd57bf"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e1c7b503-70af-43a1-b599-452de2b714a1">
+                    <propertyInstance
+                      Id="d3236950-66df-4187-91d5-a730f364018a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bcdd63dd-8a9f-499e-815b-cb55fe93df37">
+                    <propertyInstance
+                      Id="8fc5ad0d-ceb3-40ad-9473-b8819fd2d663"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fc57b243-c43e-4db2-92c8-83a1b9698641"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="6dba23d6-c5bb-46af-afb3-305e32627c0e"
+                      LastKnownName="CommandQueue"
+                      LastKnownLocation="Package10_1335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5c95e3d8-2f65-4eef-b7da-b86984bf61f5"
+                  name="command"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="c70ca485-ef06-49f7-93f0-06b507714909"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DCommandQueue Member%3D(Name%3DEnqueue OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Advanced Type%3DCommand)]) ParameterIdentifier%3Dcommand"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="d5c16363-3284-4b06-b86a-0a380b3e08ac"
+                      LastKnownName="Command"
+                      LastKnownLocation="Package4_1335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="24cf94f4-61aa-4ae4-a966-7940c37643bd"
+            name="Enqueue"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="53973bf7-4a11-402b-a73b-c8f33732bd98"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DCommandQueue Member%3D(Name%3DEnqueue OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Advanced Type%3DExtFunction)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="63944a3f-1b64-4e25-bb59-7ce14559ead9"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1b2f786a-3465-4a38-a553-939f3d5aae40">
+                    <propertyInstance
+                      Id="0aece4b2-3c55-4bed-ba17-5e9fa8e6d955"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6c2795b2-b96a-4df3-9ee9-a9839364e9de">
+                    <propertyInstance
+                      Id="2e44c275-6444-4e69-ad68-d5e7d40bcba3"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="98fb681d-6981-4511-933e-011d89900ce4">
+                    <propertyInstance
+                      Id="f34de7af-24cf-4288-a95c-3a373a2d8a61"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6ccbb790-50f9-45c3-8eb2-c28055020578">
+                    <propertyInstance
+                      Id="72c0aeb8-1a07-498d-bb8f-dbdbf1d84277"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2e0a34fe-f4aa-49f6-88c9-c17a40874eb3">
+                    <propertyInstance
+                      Id="526e6e18-1533-4f0e-81c4-2633f7e62416"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="20650db8-af49-4009-80ab-813301bed31a">
+                    <propertyInstance
+                      Id="51588c5c-f472-4214-bf8f-d7d5d7db4946"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ca622e2f-04dd-4f8c-a492-af99ac969b22"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="6dba23d6-c5bb-46af-afb3-305e32627c0e"
+                      LastKnownName="CommandQueue"
+                      LastKnownLocation="Package10_1335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="27578ae2-808f-49e6-9b78-2f04f1103c11"
+                  name="extFunction"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d99d47a0-8061-4f81-bb66-a6ca37ef30c1"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DCommandQueue Member%3D(Name%3DEnqueue OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Advanced Type%3DExtFunction)]) ParameterIdentifier%3DextFunction"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="4e7ef6bc-78f5-41fe-81ab-e0c396b2ec81"
+                      LastKnownName="ExtFunction"
+                      LastKnownLocation="Package4_1335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="c28ca1ee-d3ab-4559-840a-7b515b3d0dd8"
+            name="Enqueue"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="bdb33016-fdcb-49d9-85bb-d6b4e5dcbd73"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DCommandQueue Member%3D(Name%3DEnqueue OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DDirectState)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DDirectState)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="303f19ea-0178-4a89-828c-20c8bc6772b6"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="40805d68-cd9a-4b2e-8558-ab92b0e0aad9">
+                    <propertyInstance
+                      Id="a7336bd2-de48-432b-bc77-8904450cda30"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="799852e5-b9f1-42ae-a53f-996d39a41608">
+                    <propertyInstance
+                      Id="59d4d0a4-5744-4223-a98c-41670d9439b7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3813974e-bce5-4f2d-8a7b-ebcc917e73d6">
+                    <propertyInstance
+                      Id="03255e35-09c6-45f5-a923-bd1a342d2cd8"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b88f1891-fd89-4e9e-b26b-d9f97a193592">
+                    <propertyInstance
+                      Id="3977d861-e34d-4908-9fd1-7afda87902ba"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d550dc5f-c9be-44a0-b2b5-90850cf1b29a">
+                    <propertyInstance
+                      Id="3fc46a57-82af-4717-90a8-baa92d2a802e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="797acdc3-920b-426b-9aff-d9e20f78bf28">
+                    <propertyInstance
+                      Id="c9f77ec1-dd26-4734-bf52-7efb7005c08e"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f18f4afb-ccb6-4abd-b908-994912da71d2"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="6dba23d6-c5bb-46af-afb3-305e32627c0e"
+                      LastKnownName="CommandQueue"
+                      LastKnownLocation="Package10_1335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5004950a-71cc-4723-bbd8-d97b4f7bd7bd"
+                  name="blueState"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="16e5d272-6d69-492e-b10c-f95dc97017c0"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DCommandQueue Member%3D(Name%3DEnqueue OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DDirectState)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DDirectState)]) ParameterIdentifier%3DblueState"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="2d1e703f-21a1-4613-b9b6-3bd69d24505e"
+                      LastKnownName="DirectState"
+                      LastKnownLocation="Package3_1335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="67a7e6a8-7be3-47ff-aa14-0c2b28db138a"
+                  name="redState"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="1163f10d-fa3b-4ecd-9b3e-9a8bfd443f8c"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DCommandQueue Member%3D(Name%3DEnqueue OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DDirectState)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DDirectState)]) ParameterIdentifier%3DredState"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="2d1e703f-21a1-4613-b9b6-3bd69d24505e"
+                      LastKnownName="DirectState"
+                      LastKnownLocation="Package3_1335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d32275f3-596c-40a6-9e3b-0d63db7e5c8a"
+            name="Enqueue"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="174ef54c-e078-4965-aaaa-5f5e9ee7d862"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DCommandQueue Member%3D(Name%3DEnqueue OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DPwmSpeed)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DPwmSpeed)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="115fd6aa-aa55-4f7d-bbf6-25f98be3d1e3"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="12eef607-43c3-438c-8586-d4d8e0457048">
+                    <propertyInstance
+                      Id="86c46f60-4ea7-40a9-9a91-19fba95f21ad"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7e3f8caa-6644-46e6-a3c4-c3072d79af88">
+                    <propertyInstance
+                      Id="c92063a7-947f-4ecd-b0fe-2766188345c5"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7795c1f9-4314-49c0-85e0-b4cec11b008f">
+                    <propertyInstance
+                      Id="b3a75e1c-13cf-484d-90e1-84fd58112e0d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="265e4e4e-609a-426d-9842-732b1c46facc">
+                    <propertyInstance
+                      Id="68a82a43-c4e4-4394-8df3-acc4168e4d51"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="46db4a84-9128-4a33-bf0f-28173d6bce42">
+                    <propertyInstance
+                      Id="5bf4db49-f307-4b38-a02f-20554bb7fffe"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c3541604-f286-4e24-a8d7-6cef4fd39fdf">
+                    <propertyInstance
+                      Id="eace87ec-2e13-4eaa-ad64-0b20e8d15dc8"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="52e7b72b-c0c6-404c-8955-8ad4a6ddccd4"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="6dba23d6-c5bb-46af-afb3-305e32627c0e"
+                      LastKnownName="CommandQueue"
+                      LastKnownLocation="Package10_1335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a7515495-f903-4024-9ae7-d90401ebdb0c"
+                  name="redSpeed"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="e8997509-8e71-4e25-a75d-32acde980cf3"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DCommandQueue Member%3D(Name%3DEnqueue OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DPwmSpeed)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DPwmSpeed)]) ParameterIdentifier%3DredSpeed"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="efdd01cd-c034-4b11-80c3-0e4a639c2bf8"
+                      LastKnownName="PwmSpeed"
+                      LastKnownLocation="Package3_1335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f3746d0c-b7e5-4b2b-b567-aaa9a66adcf8"
+                  name="blueSpeed"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="194c7946-8e0c-445c-857a-5942a26fe731"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DCommandQueue Member%3D(Name%3DEnqueue OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DPwmSpeed)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DPwmSpeed)]) ParameterIdentifier%3DblueSpeed"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="efdd01cd-c034-4b11-80c3-0e4a639c2bf8"
+                      LastKnownName="PwmSpeed"
+                      LastKnownLocation="Package3_1335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="2ea0482e-fb0d-494b-b4f2-a44af298286b"
+            name="Enqueue"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="ec9154a1-3cfc-4a81-aecc-a79ea18e811d"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DCommandQueue Member%3D(Name%3DEnqueue OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DOutput)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DIncDec)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e5fddcdf-4728-4559-8a0a-bc5dcb35c3da"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d400240b-3d0a-4cc1-b6e5-618c9167b3e2">
+                    <propertyInstance
+                      Id="201de79f-75bd-468e-aa29-a9e174249f93"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aa21ea1b-7c16-4688-9869-921639e564b1">
+                    <propertyInstance
+                      Id="c1ec3f30-02c7-4b24-974e-b6f4037e5aa1"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8c910ec6-41d7-4bb2-99b9-8bec02d94f47">
+                    <propertyInstance
+                      Id="54d49a4d-9aaf-429c-a901-d042fa742cfc"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e1a2c59e-0002-4b82-86f7-715e08ecdca0">
+                    <propertyInstance
+                      Id="79459112-94e1-4287-90d2-ef499cb87a1a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="27b4ae9c-b709-4b9c-bfb5-94ac44fd0914">
+                    <propertyInstance
+                      Id="87a05c0c-8c8a-4790-90bf-1437c83fd31c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="316cca55-3e6a-4d81-b504-e2e58db77ce8">
+                    <propertyInstance
+                      Id="59102c2c-4864-4cfc-bea2-2ea1382e1fd7"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c4704917-e12b-4adf-b6cc-4d807508c7f6"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="6dba23d6-c5bb-46af-afb3-305e32627c0e"
+                      LastKnownName="CommandQueue"
+                      LastKnownLocation="Package10_1335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="14ea6aa3-d82f-40e0-9d1a-274adffba2f8"
+                  name="output"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="847378cb-f365-4ae3-b168-308ff328caf1"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DCommandQueue Member%3D(Name%3DEnqueue OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DOutput)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DIncDec)]) ParameterIdentifier%3Doutput"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="895a7710-da0c-4ee6-a35b-76965e64f43d"
+                      LastKnownName="Output"
+                      LastKnownLocation="Package3_1335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a0010718-8d3a-4c47-ab70-58b8dd8609fa"
+                  name="incDec"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="71f6e097-1c96-4af2-80b6-6292de614478"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DCommandQueue Member%3D(Name%3DEnqueue OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DOutput)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DIncDec)]) ParameterIdentifier%3DincDec"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="8784aa95-0fa8-4bc4-82aa-7ab0106042b2"
+                      LastKnownName="IncDec"
+                      LastKnownLocation="Package3_1335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="948e3ef2-8da3-4ef0-a54d-cabaa0cd05b2"
+            name="Enqueue"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="3b921b11-8c37-4619-842e-b5c725fbccb1"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DCommandQueue Member%3D(Name%3DEnqueue OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DOutput)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DPwmSpeed)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="993eb6bb-9e61-4110-bd63-d92f88ad3924"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="73357dcd-ae0a-4bd3-8029-c212ef8e985b">
+                    <propertyInstance
+                      Id="7e4c2b50-62fa-40b2-a9ea-dfa51b7818b0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ac629ee5-2f6d-4f42-a273-0d5d9a685b78">
+                    <propertyInstance
+                      Id="a9bcb30d-14b8-4f3f-8933-d4bfec31c697"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5fa47903-8d44-4489-991d-cb4bf662f114">
+                    <propertyInstance
+                      Id="a16010f8-b09d-47e9-a4d3-aa2148e74f95"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b15f4bbd-829a-49d3-8727-570dda67fdd6">
+                    <propertyInstance
+                      Id="6137b178-6441-46ef-b68b-966276bcde6d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="851daa12-b234-4c4d-ac9f-86419425a76c">
+                    <propertyInstance
+                      Id="a86bc4dd-3954-45eb-85ba-f0b543c187ba"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c69ff3dd-d8de-44fc-b48e-6a3a92199651">
+                    <propertyInstance
+                      Id="084ceaa0-c6e8-46f9-a162-184378d7a434"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ba1a851c-9ed8-4372-bd32-1aeba153189d"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="6dba23d6-c5bb-46af-afb3-305e32627c0e"
+                      LastKnownName="CommandQueue"
+                      LastKnownLocation="Package10_1335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4c9ebe85-11e5-4d76-aa98-0b5d26e67cd3"
+                  name="output"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="53444f6b-9a27-4a9a-bf00-a9f770beb93a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DCommandQueue Member%3D(Name%3DEnqueue OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DOutput)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DPwmSpeed)]) ParameterIdentifier%3Doutput"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="895a7710-da0c-4ee6-a35b-76965e64f43d"
+                      LastKnownName="Output"
+                      LastKnownLocation="Package3_1335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="eb84c337-06f4-4b72-8463-bf1594467ed5"
+                  name="speed"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="7fdf9d9d-d6b7-43b6-9fdf-b179e1cfe860"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DCommandQueue Member%3D(Name%3DEnqueue OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DOutput)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DPwmSpeed)]) ParameterIdentifier%3Dspeed"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="efdd01cd-c034-4b11-80c3-0e4a639c2bf8"
+                      LastKnownName="PwmSpeed"
+                      LastKnownLocation="Package3_1335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="52118244-c455-43de-b909-668800be2efa"
+            name="Pause"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="07f35b7c-90bf-40ce-93f7-54f45996ae5d"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DCommandQueue Member%3D(Name%3DPause OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft .NET Micro Framework%2Fv4.3%2FAssemblies%2Fle%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3f805d46-0f3b-4fd2-a22d-903a56196a8a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7bf5ce6d-6c4f-4485-bc5b-897b6767a568">
+                    <propertyInstance
+                      Id="d2df61d9-48e3-4c71-8960-7075cec8fd94"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="78bcfebf-d5db-4069-9020-850886fcd14a">
+                    <propertyInstance
+                      Id="89f27101-259b-4694-8351-978cb91de01f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9ca0452a-aba3-4fed-877e-15e3d5483819">
+                    <propertyInstance
+                      Id="f87f993f-95f9-4535-b4b6-0c7a737b0d8e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="51fe21c4-4bbd-41d0-ad0e-469fb6d7cf89">
+                    <propertyInstance
+                      Id="f11e20d9-fdda-4dcd-a180-405661dccd80"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ec929167-d5e5-4d2e-bc22-d702181ec3db">
+                    <propertyInstance
+                      Id="c7e361e6-ddb8-4c8f-81c1-5628352354da"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="771af832-1e2f-4709-ab9b-7656eabbd5ff">
+                    <propertyInstance
+                      Id="84d8f27e-4965-4c27-aa44-9e940925bef9"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3f77539a-02df-4771-88fa-cfae6e7e31c8"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="6dba23d6-c5bb-46af-afb3-305e32627c0e"
+                      LastKnownName="CommandQueue"
+                      LastKnownLocation="Package10_1335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="70aa491f-9676-403d-9f43-c7885c20245b"
+                  name="milliseconds"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="bfd8471a-124d-4fe2-bc85-02d818fb148d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DCommandQueue Member%3D(Name%3DPause OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft .NET Micro Framework%2Fv4.3%2FAssemblies%2Fle%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dmilliseconds"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="Gma.Netduino.R2D2.Architecture.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d0b915c9-3bd2-4af8-aa6d-1fd74c304b3b"
+            name="Execute"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="bceac533-45af-436d-bf3c-03fc99f51dd1"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DCommandQueue Member%3DExecute"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0b132a0b-26ef-4d0e-a561-978ec205c40d"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6e52a8c2-23e6-4529-ba82-46780498ee8a">
+                    <propertyInstance
+                      Id="726e3f69-0241-4869-a6a5-a88f4b425128"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4a1136fd-e518-42c8-88fb-91d28cd64acd">
+                    <propertyInstance
+                      Id="ea5a0d5d-4084-43ca-bcb9-2948d23aefcb"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bc3172cd-aa4a-4d1d-8546-3ce9ba558726">
+                    <propertyInstance
+                      Id="92b3887a-cf5c-4b10-b531-189e36b2cc05"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="449c6d56-3d52-42c9-89ca-75ba273ff9f3">
+                    <propertyInstance
+                      Id="6ddf7f70-d9dc-453c-b7a4-db16e91a5d3b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fade079a-bfd8-4dcd-bc30-c4c47e052d6b">
+                    <propertyInstance
+                      Id="4d775166-8343-4283-9c8a-0b549bfd766c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e997d073-e72c-4566-9b07-f87e75f38bb2">
+                    <propertyInstance
+                      Id="111efdbf-59e9-4c36-a1cb-a25c5efa5ea9"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="0d3a0190-7e4e-4ff9-a87e-453615bba930"
+            name="ExecuteAsyc"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1e1646a6-2edf-49fe-9ade-f8ba4bf149c2"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DCommandQueue Member%3DExecuteAsyc"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b13505cd-9737-476f-9372-7edd1db4acc1"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="60fef3b0-f476-49d0-bc4a-40872942f8e6">
+                    <propertyInstance
+                      Id="f5f63589-6af5-4486-a57c-2bd54c247449"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e44546bd-e748-478d-bc12-d81b9e9f6861">
+                    <propertyInstance
+                      Id="3b26da41-6a12-4101-8530-33688b4de821"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="55ee8be3-a6db-42a0-aa20-360228583306">
+                    <propertyInstance
+                      Id="fd5e0999-33ad-4d05-a363-95f33ca5cb52"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="00b0963f-556c-4640-ac93-909691054159">
+                    <propertyInstance
+                      Id="9f97cfb2-41c5-4eb2-9608-f9dd4f0ff00e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="869b724e-9795-4a22-b82a-cea3eadf2ed6">
+                    <propertyInstance
+                      Id="08cbba21-8551-41f2-b5da-b0444703e0bc"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bddf092d-713d-43d4-b10e-9dfb1e9b936a">
+                    <propertyInstance
+                      Id="a6305513-266a-436c-b069-bc1f2aaf4269"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="38383034-0466-4bfc-9283-3cb0d179c4e1"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="12ce79a7-5093-4300-9c72-1836fce0dc8f"
+                      LastKnownName="Task"
+                      LastKnownLocation="Package10_1335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="12ce79a7-5093-4300-9c72-1836fce0dc8f"
+        name="Task"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="38b3dc98-01ef-42ed-8ba3-f3d88b88f002"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DTask"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="709b12b8-b8ba-4bb1-a529-97458c085157"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3bf21f88-db82-4f6c-969d-666f3b9c74c2">
+                <propertyInstance
+                  Id="49c04061-22f2-4bcb-af95-0dd11beaa24b"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c5e7af02-a038-48a5-b165-b2afbdde1215">
+                <propertyInstance
+                  Id="874dfc86-1d35-460f-b02c-fcc0b7b89f83"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="47b40d0d-49f4-464e-8654-15dba772227a">
+                <propertyInstance
+                  Id="e3ae2cdc-3073-4770-9b00-f901ba99004b"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="16f1911c-0f98-4048-9f73-35f03156e001">
+                <propertyInstance
+                  Id="6f5ca125-9381-464f-a740-7610bf1a9787"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5efc7b0b-d669-4386-990b-c313df4c7d70">
+                <propertyInstance
+                  Id="5a7093fc-a527-4a7c-9990-3baa7008b196"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="374aa281-f578-44b7-b6da-fb4bdbe8fa33"
+            name="IsFinished"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="51e2c7b9-6d04-4233-9c54-e71d5b1ca9af"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DTask Member%3DIsFinished"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6eea337e-5ea2-4742-8e06-eaaa88eea2cc"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="39fd93bb-e28f-4569-a45f-8dd6f67971bd">
+                    <propertyInstance
+                      Id="6a2d9fc5-af2e-4e06-9af8-8eef13f95bd8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c42ea0a2-347d-4e4f-b39f-6c870193b1df">
+                    <propertyInstance
+                      Id="cecee16d-f932-4554-a13e-ff46eadff105"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5d4f2ce7-9ec8-40f3-a388-5aefcd7e91e1">
+                    <propertyInstance
+                      Id="8438d835-2e38-44ad-927a-0eda81efaa04"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="62024e72-874a-474a-9d9a-eb7c2272db10">
+                    <propertyInstance
+                      Id="3a621c9b-da2e-4537-bc6a-540c08ee9cd1"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fad2c6a9-2f88-4361-b69e-c31452346f22">
+                    <propertyInstance
+                      Id="8d0ae014-a5af-43a0-a7d2-b21d7eb4b7f2"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f5e537ad-f06e-4a45-a33e-0507b6d771ac">
+                    <propertyInstance
+                      Id="44f471d8-24ea-4a8f-ae84-f9046ead3ff1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0ed1d731-128d-4c79-bdf8-dadf95d588c8">
+                    <propertyInstance
+                      Id="9c404350-6964-40dd-8afc-b23a3134b1a7"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="Gma.Netduino.R2D2.Architecture.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="8d7d76c4-204f-4426-abd8-581bbdfa0703"
+            name="m_CommandQueue"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="ad8fc7bd-788c-4e76-92be-e6b02f5f46e7"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DTask Member%3Dm_CommandQueue"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="184fbd3a-94b2-4c43-a70a-109da0807f5d"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="642aa812-f977-4d06-8c83-b4c68878c0d8">
+                    <propertyInstance
+                      Id="a175c085-bec6-456b-b9a4-49e45f04c901"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bc671489-69fe-4231-a9cd-72257b265fa5">
+                    <propertyInstance
+                      Id="eb08beae-5287-4979-b555-d25ad611572d"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e8825dee-5487-4e89-bd62-2bdb47927a70">
+                    <propertyInstance
+                      Id="17bafd6f-c346-4d3c-8a69-ee1bea4443b7"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="077021ce-a5b7-4a6d-9c46-6273ebab5a53">
+                    <propertyInstance
+                      Id="93696ea4-5355-434d-8801-ea854b6b3080"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="58599f96-e0bb-4e8d-a6da-89460cf4014d">
+                    <propertyInstance
+                      Id="e3ba7b8b-1dd4-4203-9547-fc1205bac0ec"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="6dba23d6-c5bb-46af-afb3-305e32627c0e"
+                LastKnownName="CommandQueue"
+                LastKnownLocation="Package10_1335.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="e5a48509-5ec4-440f-9af8-5554b7bfa2b3"
+            name="m_Thread"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="215b8398-1dec-4644-aa2f-b3ef960d1753"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DTask Member%3Dm_Thread"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c4b7d473-72c7-4ed8-9f4b-895a2f29a95f"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f951b32d-614e-47d1-80e5-76920b97537d">
+                    <propertyInstance
+                      Id="b2ec75f8-c53c-499f-bcaa-f2db5514c701"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5202993e-27fc-489b-86a1-2888a8db1bdb">
+                    <propertyInstance
+                      Id="862ea085-a09a-4e90-a2cb-3e49f6be408c"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fed5d013-9250-4af4-9ff1-dd950bfe06d8">
+                    <propertyInstance
+                      Id="e82aa8a1-2480-4835-9992-2ae6d9d9173c"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c33b7a53-978f-4a17-b2cd-dba69df33cee">
+                    <propertyInstance
+                      Id="8cc76106-e8f1-42b6-b428-a8a04ca30d89"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e2a5c758-e473-483e-bfa3-7311d25a107c">
+                    <propertyInstance
+                      Id="666c5622-0d84-4058-9dcf-42c7b9bcbc56"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="5b24d0f6-b6ac-49af-b0f4-094727b2a83c"
+                LastKnownName="Thread"
+                LastKnownLocation="Package12_1335.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="6c9abc8e-19e8-4c6b-83ed-90dfcb9bc159"
+            name="OnFinished"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="3fb73491-a072-474c-8500-35df5095025c"
+                handle="viewcode://./CodeSchema_Event?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DTask Member%3DOnFinished"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5ca02133-9982-46f7-beee-40a1e0ab8b6c"
+                name="event"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1795e2cb-b1d4-4430-8d50-8aab79668610">
+                    <propertyInstance
+                      Id="0a4a02f4-dc5d-4263-846c-03fc823f80ff"
+                      name="Add"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="055cbcec-05b8-4b4a-af4b-a25d9ac94fc1">
+                    <propertyInstance
+                      Id="3f621e20-a688-4f3e-93a3-fdce9f84645c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8dcd57f5-1da5-4478-9e2e-edeb77d9f2b4">
+                    <propertyInstance
+                      Id="aa7f7724-21f7-4e13-8d0f-55995040cc29"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d522c6a3-8cca-4747-8780-9da49726f234">
+                    <propertyInstance
+                      Id="1aa207d6-07ee-43b2-92c9-a3b36ec1e732"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="df5f7691-b551-4d9f-83ff-2f43994d4f7c">
+                    <propertyInstance
+                      Id="4e623dc1-204f-456d-b3a5-b83783fe5491"
+                      name="Remove"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="0ee1e9c7-9c51-4e11-9020-c719548db38e"
+                LastKnownName="OnFinishedEventHandler"
+                LastKnownLocation="Package10_1335.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="58c9d792-4213-4bc7-9b12-f67d2a18aa28"
+            name="Task"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="2b0269c5-e78c-4ef2-a931-cf8ef014c089"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DTask Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DCommandQueue)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6d555814-3f32-41ea-be58-c4775b0ca93b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="02bf87e0-ffbb-42c5-a71c-c1dced35da6b">
+                    <propertyInstance
+                      Id="53fd6d0f-c7e7-49d9-8f43-178ef6589cbc"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c8618284-75ab-42ef-a8ce-27b5d1031349">
+                    <propertyInstance
+                      Id="c0a48a40-e2ff-4e15-af6f-925f136cbc1c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3450282c-cd05-4f16-b0bc-b9be6fa14181">
+                    <propertyInstance
+                      Id="ef5e3819-9c40-41a0-8d65-301ad40aea2f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="62ae10a6-d5df-4bd1-a52d-84adf6b5e760">
+                    <propertyInstance
+                      Id="e1748f43-9baf-4e4c-a9ee-adcea5dde255"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="30956ff2-ba68-495c-b910-13a147a66e64">
+                    <propertyInstance
+                      Id="54bfa223-5912-4d97-ad92-30e7072bd6b1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d34aaa10-e3c0-4f2a-bdfa-33e96a2286d3">
+                    <propertyInstance
+                      Id="b5e8abcd-cc21-4dea-9a4f-bd3384516669"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="54c59a6f-6d4c-45f1-9129-b8a2b4f06951"
+                  name="commandQueue"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="15c20085-562e-4e65-b8c8-3693904c9da3"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DTask Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DCommandQueue)]) ParameterIdentifier%3DcommandQueue"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="6dba23d6-c5bb-46af-afb3-305e32627c0e"
+                      LastKnownName="CommandQueue"
+                      LastKnownLocation="Package10_1335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="749b13b6-9afb-419a-9ba2-9d132d7b2cbb"
+            name="Start"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="0e7c29e1-44d6-4211-9759-7420624431b0"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DTask Member%3DStart"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e5f4d018-dfa6-4f9a-bd49-571b662f108a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="96e752b7-1e7d-45b9-809d-a561e990229b">
+                    <propertyInstance
+                      Id="32490d46-9534-482b-82b3-653a12dfedde"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e2ccd7e1-9859-4167-af0c-3f05cc6f8ba2">
+                    <propertyInstance
+                      Id="e039f614-ae60-461d-a21d-f671b480f93b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b7ddaac8-c254-4dbe-a4a3-9750c4353719">
+                    <propertyInstance
+                      Id="8a387fe9-53d5-4279-af66-237b095dd88c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c29b979d-9bbd-4e66-b56b-ed04becb8af5">
+                    <propertyInstance
+                      Id="b7ab6468-598d-4646-93d4-7f79a102d3bd"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ab6c3435-b413-424c-b648-356d526f6b63">
+                    <propertyInstance
+                      Id="bc5beccc-f171-43dd-873e-c4ebd2979c29"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b1fba114-dc2f-4f66-9029-36062f8f3d8b">
+                    <propertyInstance
+                      Id="4197f43a-725b-47d6-a26a-a8e87d0df981"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="ebf122fb-9f3b-448a-8f78-722f207193db"
+            name="Execute"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f1eaec1b-8cc1-4003-9b8c-d3e20035dd27"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DTask Member%3DExecute"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8d984183-ab66-42c5-9958-8b8c2d628e6e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="873d0993-57f7-4994-8f26-1e8f3c5173b8">
+                    <propertyInstance
+                      Id="95721123-08bd-424c-b281-bdccf06eefbd"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ad5913e7-6cbb-47c9-9037-8c1e4326e6c6">
+                    <propertyInstance
+                      Id="0f8afb5a-d436-4c5e-884d-55c16ed8d1bd"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="96fb48b7-e067-4095-9148-5ffe1ccb7eed">
+                    <propertyInstance
+                      Id="26fa9127-be15-4586-84d7-f90fe8ca795d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="737338bb-6aa9-4e0e-97eb-09c08eae83de">
+                    <propertyInstance
+                      Id="4ec322d2-b111-4fb5-b65e-573a6e5fda5c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1f4fff68-c3f0-4879-b321-44a00c97bd53">
+                    <propertyInstance
+                      Id="9b84a573-f897-4618-8704-b9d1ce897024"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2b4fb0a9-efef-4a78-83f3-c4b5b1836ca1">
+                    <propertyInstance
+                      Id="7dcc5684-8e34-4579-b177-918a1f12fb57"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="c0112648-91af-4f78-af4c-86ab1539f977"
+            name="Cancel"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c42928ee-7c4a-4122-bc81-acc575a07e1a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DTask Member%3DCancel"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4f94eb8f-b705-484f-8256-903cb784719d"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f8c7fb96-c3eb-458b-9d27-f41510ac3e00">
+                    <propertyInstance
+                      Id="364f9135-5104-4d35-91a4-ca80348e74a6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a940715c-09c4-4ebd-a9fc-21a31b63995b">
+                    <propertyInstance
+                      Id="ba892a94-3fc0-4b98-9ebb-35dca539c278"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f0511b3e-3ddf-420d-ad3b-0d72c1a9fba6">
+                    <propertyInstance
+                      Id="1eefd3dc-c95b-4fa9-9c4e-c2dbd133ead4"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1b106e42-eaf5-4fc9-b398-7299a5fcc618">
+                    <propertyInstance
+                      Id="7f43e5ef-5fe8-4fcf-9728-dee1427fa478"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8924a59c-c0b0-4b7d-8d2b-203aff4db53b">
+                    <propertyInstance
+                      Id="73e2a027-662c-4468-b49e-99467e7d0a65"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3a865c72-9cd5-4a6a-bc26-078f5e6572c8">
+                    <propertyInstance
+                      Id="ea92cf99-0c1d-4686-ac0c-6b9e0120b2d0"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="25ca6dab-a447-4243-ae6f-a72f222817d3"
+            name="InvokeOnFinished"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="ec9113d4-fa20-4cef-af0d-70230e3df1c3"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DTask Member%3D(Name%3DInvokeOnFinished OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DOnFinishedEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="528a36ef-a610-4972-8e64-61301d86aed5"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="57b167dc-365b-46e3-a5a8-6c439778d4d2">
+                    <propertyInstance
+                      Id="12d431ce-818f-4194-a0b8-88756659ddcc"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d88026a8-ea34-49ce-a1aa-337e1e22d13a">
+                    <propertyInstance
+                      Id="3fd97323-71ee-429d-a71a-341344787b0f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e985fb8d-8c9e-4982-8d2b-78f764ea1db5">
+                    <propertyInstance
+                      Id="d214f530-13d6-41f9-8400-25f5fe444b83"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="51727848-56e0-48fa-8e1c-34b23978cf09">
+                    <propertyInstance
+                      Id="2aa635e1-c657-46c3-bf1e-061905309a8a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="78ed7d4f-f8c3-4e2e-b8eb-ab66bb070a32">
+                    <propertyInstance
+                      Id="7b108fac-6651-4b91-a5df-b6cf5b67476d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5cc62020-abb4-4d26-a3e4-f985e7c328a9">
+                    <propertyInstance
+                      Id="3a8af084-7a00-4730-ad8d-4d78e3aaed42"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b5cea3f1-af3d-4fe2-bb73-36f0b9b22599"
+                  name="args"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="cfbda7f0-3d76-4395-a99d-6014e0bfa8ee"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DTask Member%3D(Name%3DInvokeOnFinished OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DOnFinishedEventArgs)]) ParameterIdentifier%3Dargs"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="1bd6a960-a174-4321-a951-37d834383a5e"
+                      LastKnownName="OnFinishedEventArgs"
+                      LastKnownLocation="Package10_1335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1bd6a960-a174-4321-a951-37d834383a5e"
+        name="OnFinishedEventArgs"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="249914ff-70fb-48b7-bfb1-423502682cb1"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DOnFinishedEventArgs"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="a1bb3444-2d83-4579-9634-bd7078134418"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c277e143-daba-423d-9e99-ebcb157a160e">
+                <propertyInstance
+                  Id="601fbf7a-130c-49a9-bd37-f2af385cf1bf"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0c53fdbe-ed9a-456d-a158-1c1b48672824">
+                <propertyInstance
+                  Id="c5fd671d-e7c8-4905-b451-1fc49c100cb8"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5aac727e-a058-43ba-b059-442769f52d90">
+                <propertyInstance
+                  Id="9b4f2b86-b369-4775-afae-d0acd9c82929"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="334b96ed-7fb4-487f-916c-5ec866e0d1af">
+                <propertyInstance
+                  Id="9aec10aa-8fe6-47fa-8d3f-1c4e7e0e3647"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e978e394-5bf2-47e9-bed7-7370464f5fc6">
+                <propertyInstance
+                  Id="8f322b89-ce74-4f0d-880e-8ce834188dc6"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="db38664c-c25b-4d0e-b7d1-b02590d676f2"
+            isSubstitutable="false">
+            <classMoniker
+              Id="67bb5991-6135-44ff-b042-9cba4e40ff27"
+              LastKnownName="EventArgs"
+              LastKnownLocation="Package8_1335.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="d7ec9038-74b1-4f11-9e30-e27e073a12e7"
+            name="OnFinishedEventArgs"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c28ccbfe-2eb3-4f18-89d8-36d2278c81e7"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DOnFinishedEventArgs Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="43d861bd-0c7d-4d96-9f7a-f4a97574ad19"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d5d25771-683f-4fc3-a7fb-0c3c40c70790">
+                    <propertyInstance
+                      Id="0337c61a-6628-4d21-ac20-772f64a72664"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="41ef678b-948a-4879-859b-a5dfdc6b0d8d">
+                    <propertyInstance
+                      Id="1798300b-4ee4-452d-ae98-184a61d49e14"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5cf10655-228a-4814-8296-53b93b1bf2d3">
+                    <propertyInstance
+                      Id="efc37685-0951-4a42-9293-08c3c039c593"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9d79e686-4edc-49c8-99f7-c2f14e870a3d">
+                    <propertyInstance
+                      Id="bae4582c-b7a8-4419-9d7d-a1401a7cb6de"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b7529ccf-5f3e-459d-8440-e0dd14bf82ff">
+                    <propertyInstance
+                      Id="1b9de524-118c-4698-b2bd-a54b084d07a6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1e466493-fd83-45e8-8b5e-90d3075a2c5d">
+                    <propertyInstance
+                      Id="857d9c39-d504-4866-ab33-21d4987f7d1d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0ee1e9c7-9c51-4e11-9020-c719548db38e"
+        name="OnFinishedEventHandler"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="3ea1d21d-3302-45fd-a678-38bc7795c07a"
+            handle="viewcode://./CodeSchema_Delegate?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DOnFinishedEventHandler"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="38b5c536-ef96-4a81-a8f4-b71d6dcad631"
+            name="delegate"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="aaa7a957-0aa9-4236-8df3-d07c232175be">
+                <propertyInstance
+                  Id="17123362-8f1f-4079-8315-163e1161799c"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d01b5e4b-4611-4894-87db-2fdd1ed2244a">
+                <propertyInstance
+                  Id="bc7b14ac-2d9c-4301-abbc-3581b50dddf2"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="02e176b2-092a-4e3d-b80a-00f906d5f353">
+                <propertyInstance
+                  Id="4809552b-a706-4959-93a8-49a8fb116710"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="3daf1141-3aaa-4db6-a57f-4be14409a790"
+            name="Invoke"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="6de028fd-a8fd-4364-b546-e063d163d03d"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DOnFinishedEventHandler Member%3D(Name%3DInvoke OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft .NET Micro Framework%2Fv4.3%2FAssemblies%2Fle%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DOnFinishedEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="cf1add90-9a4e-4b64-89d8-7897e25800d5"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="53672de2-3b01-4154-8a62-47c51dfc0e91">
+                    <propertyInstance
+                      Id="45ad671f-8d5c-4909-9f02-3f4f1ffd6bad"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7a78a2e0-5adf-404d-a2da-b51cd9363504">
+                    <propertyInstance
+                      Id="bab9ee84-d997-4028-a585-3bb26e8f3f20"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="03c05a00-0025-4d22-ae53-014d840e9ef6">
+                    <propertyInstance
+                      Id="163d4b91-818e-4980-8684-98da961a15b4"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a34ed4fd-f159-43d3-8c1d-8473f3403e4e">
+                    <propertyInstance
+                      Id="1b931947-8779-42b2-bea6-5359c1f660cb"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="01c24b64-233f-403b-bc78-6fdbe8f82b88">
+                    <propertyInstance
+                      Id="0d0d193f-9eec-4b20-a3ac-82f0cbc815e4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1c5ed458-5b45-4046-89f5-0c482a3e11fe">
+                    <propertyInstance
+                      Id="f886a826-0b46-442e-8a6f-8364a8c617f9"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bcc73de6-a098-43e1-9644-889100db305a"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="36e07bf9-d391-407f-a571-ac62e5bc5663"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DOnFinishedEventHandler Member%3D(Name%3DInvoke OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft .NET Micro Framework%2Fv4.3%2FAssemblies%2Fle%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DOnFinishedEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="6302c428-e790-41cd-aaf0-0dbc0368a5a4"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package6_1335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="44e24327-3710-45d8-9511-ae56aa7b1b62"
+                  name="args"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d45ca9d6-c4b8-4465-80f0-2dd8513ea595"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DOnFinishedEventHandler Member%3D(Name%3DInvoke OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft .NET Micro Framework%2Fv4.3%2FAssemblies%2Fle%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Queue Type%3DOnFinishedEventArgs)]) ParameterIdentifier%3Dargs"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="1bd6a960-a174-4321-a951-37d834383a5e"
+                      LastKnownName="OnFinishedEventArgs"
+                      LastKnownLocation="Package10_1335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

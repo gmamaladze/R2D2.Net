@@ -2,11 +2,14 @@
 // Copyright (c) 2014 George Mamaladze
 // See license.txt or http://opensource.org/licenses/mit-license.php
 
-namespace Gma.Netduino.R2D2.Drivers.LegoInfrared.Internal
+namespace Gma.Drivers.Lego.IrRc.Advanced
 {
-    internal enum Escape : byte
+    public enum CommandType
     {
-        ComboPwmMode = 1,
-        UseMode = 0
+        Extended,
+        ComboDirect,
+        SingleOutput,
+        CompboPwm,
+        Pause
     }
 }

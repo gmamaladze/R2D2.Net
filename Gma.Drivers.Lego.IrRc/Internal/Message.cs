@@ -4,8 +4,6 @@
 
 #region usings
 
-
-
 #endregion
 
 namespace Gma.Drivers.Lego.IrRc.Internal

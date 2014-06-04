@@ -4,9 +4,11 @@
 
 #region usings
 
-
+using Gma.Drivers.Lego.IrRc.Advanced;
 
 #endregion
+
+
 
 namespace Gma.Drivers.Lego.IrRc.Internal
 {
@@ -22,7 +24,7 @@ namespace Gma.Drivers.Lego.IrRc.Internal
 
         public override Escape Escape
         {
-            get { return Escape.ComboPwmMode; }
+            get { return Escape.UseMode; }
         }
 
         protected override int GetNiblle2()

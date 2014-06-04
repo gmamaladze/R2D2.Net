@@ -4,7 +4,7 @@
 
 namespace Gma.Drivers.Lego.IrRc
 {
-    public enum ComboDirectState
+    public enum DirectState
     {
         RedFlt = 0x0,
         RedFwd = 0x1,

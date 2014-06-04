@@ -6,7 +6,7 @@ namespace Gma.Drivers.Lego.IrRc.Internal
 {
     internal enum Escape : byte
     {
-        ComboPwmMode = 0,
-        UseMode = 1
+        UseMode = 0,
+        ComboPwmMode = 1
     }
 }

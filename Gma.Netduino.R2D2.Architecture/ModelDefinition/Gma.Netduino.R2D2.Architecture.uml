@@ -1,8 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="c15aba9b-8ec0-4f04-bf1d-ca4c2c26eabe"
   name="Gma.Netduino.R2D2.Architecture" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="418be3ed-beeb-4e29-bdca-eacd9388ec5d"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3D::"
+      tag="ViewCode" />
+  </referencesInternal>
   <profileInstances>
     <packageHasProfileInstances
       Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
@@ -15,6 +21,12 @@
       <profileInstance
         Id="532ea607-fb19-44b8-8502-3351b05452be"
         name="StandardProfileL3" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="f7ce7eb9-0b1a-4a8e-b24e-f09e2e5e6d6d">
+      <profileInstance
+        Id="b677dc0f-c033-4ec5-9d42-695772649655"
+        name="CSharpProfile" />
     </packageHasProfileInstances>
   </profileInstances>
   <packagedElements>
@@ -54,6 +66,319 @@
         name="IR"
         isAbstract="false"
         isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="0b82c71a-174a-4955-8bcd-d949490713a8"
+        LastKnownName="Gma"
+        LastKnownLocation="Package_1335.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="210a345a-f2da-44f1-9ad4-d3d7656879ee"
+        LastKnownName="System"
+        LastKnownLocation="Package6_1335.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="c83a1e8d-329d-4294-86d1-79f9e07b56b9"
+        LastKnownName="Microsoft"
+        LastKnownLocation="Package7_1335.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b7a3a424-4c8b-4ecf-bcb2-98eb251f98b3"
+        name="Output"
+        visibility="Private"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="01256c74-dc04-4c5f-a3eb-55bf9a42c224"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Netduino.R2D2%2Fbin%2FDebug%2FGma.Netduino.R2D2.exe Type%3DOutput"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="6fb1127c-bb9c-4cd5-860f-7e68e1934494"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8ae1e9da-acc2-4423-a0d1-6d24e825b92e">
+                <propertyInstance
+                  Id="e978b7e9-0301-4ec5-8999-e5452224de6e"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="80321a42-fd8a-48b2-9017-accd8bf09b40">
+                <propertyInstance
+                  Id="280a7375-bfb3-4341-b832-e1af19039172"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1bbafda1-e6de-4bbd-8450-5c4cb4a3ff4e">
+                <propertyInstance
+                  Id="5d940c6e-ada0-43f2-82fe-2d9ff0530951"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="26dfa4d4-5980-45fb-bf96-a04297759e42">
+                <propertyInstance
+                  Id="3158095f-29c1-4294-ad0a-72ca2682f28b"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c048fb8a-f5bc-44c0-a90e-3630401156be">
+                <propertyInstance
+                  Id="f01f50f0-5756-44cd-a2d9-172629a28ebf"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f3da1d67-0140-424f-9513-88db4fdec567"
+        name="PwmSpeed"
+        visibility="Private"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="25e3ec99-4728-4eb6-8d2a-d2aba3d055ed"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Netduino.R2D2%2Fbin%2FDebug%2FGma.Netduino.R2D2.exe Type%3DPwmSpeed"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="01c7f1d9-6b4a-450c-8a79-0cc29052e564"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e631b02c-56ad-491c-a6bb-aad75dbcc528">
+                <propertyInstance
+                  Id="701f16eb-cb33-4d26-90f6-85d3168cc3b4"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0f24f296-6b7e-48bf-bfe5-6998a83ef789">
+                <propertyInstance
+                  Id="fa5ac4f0-8bbe-4d94-bbf6-f515b83e6678"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="735d5bb3-0632-4362-8354-c36b2003b52e">
+                <propertyInstance
+                  Id="d11a1106-e39b-4d0b-8431-0315d5b9ace9"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="adfab6eb-e7d3-4828-8d84-c5c3b144fd28">
+                <propertyInstance
+                  Id="8648c539-13c6-40ce-aa15-1d2cd94b7bfa"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="140848d6-0dad-400c-9933-86309fd8db52">
+                <propertyInstance
+                  Id="80eaffcb-01ec-4535-b10f-5239595f3738"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="90d53ab5-93b5-4846-a190-b40f4ce2edf6"
+        name="IncDec"
+        visibility="Private"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="9cd3a2ca-0118-408f-b36d-9680b572ef9f"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Netduino.R2D2%2Fbin%2FDebug%2FGma.Netduino.R2D2.exe Type%3DIncDec"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="0f66a13c-f864-4d62-82c8-e630c99a148c"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c6a41e0d-db71-4bea-904e-8eef8ce5f7e0">
+                <propertyInstance
+                  Id="3f8c7b14-225d-4add-9beb-a426fc1ede90"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0f44e03f-7d70-46a0-8242-ab1812313a85">
+                <propertyInstance
+                  Id="d8d5033b-d903-4ab3-9b70-bdb9cb46ef2d"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7011791a-b534-473e-b1b3-70311e87b820">
+                <propertyInstance
+                  Id="39e19c41-2d56-433a-bc60-38a6dfac0e2d"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1f8634be-877f-419d-a482-0003b8a8fa5d">
+                <propertyInstance
+                  Id="34c7126c-6175-4cf7-aafe-fb1e432d1342"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="54f27e74-d6d4-47d5-aa53-5956c278d968">
+                <propertyInstance
+                  Id="6dc5dcf2-f6c5-4cf4-a457-b926e2f555d1"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="948d46c8-c85a-4999-ab06-dace6764e4bf"
+        name="CommandType"
+        visibility="Private"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="b5563f47-fa9c-4cd0-9122-7676e43238e0"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Netduino.R2D2%2Fbin%2FDebug%2FGma.Netduino.R2D2.exe Type%3DCommandType"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="f152d56c-40f7-496c-a479-e8ebaf9241b6"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6caa6b63-3267-4cd9-8dc3-8ef0d66ebb8a">
+                <propertyInstance
+                  Id="1f023b37-3117-4088-8b66-be556b0dfc10"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f4781ce4-41e9-41b2-be7c-d3a29afea585">
+                <propertyInstance
+                  Id="a78775a3-a888-46a6-b99a-80e4fc544fd6"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9ae1d76a-4015-4360-94d0-6725025a3cba">
+                <propertyInstance
+                  Id="cc693f0b-a9fe-4d9b-bc25-f5eb374fc882"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5511eaf6-f332-462b-8d80-9c65b2011301">
+                <propertyInstance
+                  Id="43b824bd-65f7-4891-9e23-499d347d24a0"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bcc03f6d-018e-44b7-834b-90a998aca2b5">
+                <propertyInstance
+                  Id="f86250f7-a816-4ebb-9ac4-6cb4217c8389"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a4393f8d-cd74-4bf7-93c8-8a1421823a8c"
+        name="SingleOutputMode"
+        visibility="Private"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="616196a8-cd64-4f14-b8d9-328633f3b6a8"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Netduino.R2D2%2Fbin%2FDebug%2FGma.Netduino.R2D2.exe Type%3DSingleOutputMode"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="04e44e64-4e3f-475d-8e07-920b97655678"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2bcfe10f-51c1-472d-bcda-e3967f483139">
+                <propertyInstance
+                  Id="26e473c3-4b96-42de-b56a-3fe9e46496e7"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="29694ef6-d95a-471d-8c53-95c42c32110c">
+                <propertyInstance
+                  Id="06e41873-fb26-4afc-bf34-95126ffbb4e6"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="dcff7023-5b3f-4624-8db1-40234bd9c39a">
+                <propertyInstance
+                  Id="e2a63f6b-1a6b-4e72-b0e6-c53954d7b20e"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="93b8e7cf-43ea-484d-a36e-a52a09939544">
+                <propertyInstance
+                  Id="5f616e1d-05e8-4ce2-9de9-bb042b2f3d57"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1bc2471a-74e1-401d-b9ca-1e138eb2c2d1">
+                <propertyInstance
+                  Id="d82e0851-2dd3-4de4-a7b3-2570de15f056"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

@@ -4,9 +4,9 @@
 
 namespace Gma.Drivers.Lego.IrRc.Internal
 {
-    internal enum Output
+    internal enum SingleOutputMode : byte
     {
-        Blue = 0x0,
-        Red = 0x1
+        Pwm = 0x00,
+        IncDec = 0x01
     }
 }

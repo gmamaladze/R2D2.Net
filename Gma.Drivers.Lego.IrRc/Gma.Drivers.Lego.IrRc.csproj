@@ -31,23 +31,38 @@
   <Import Project="$(NetMfTargetsBaseDir)$(TargetFrameworkVersion)\CSharp.Targets" />
   <ItemGroup>
     <Compile Include="Channel.cs" />
-    <Compile Include="CommandType.cs" />
-    <Compile Include="ComboDirectCmd.cs" />
-    <Compile Include="ComboDirectState.cs" />
-    <Compile Include="ComboPwmCmd.cs" />
-    <Compile Include="Command.cs" />
+    <Compile Include="Advanced\CommandFactory.cs" />
+    <Compile Include="Advanced\CommandProcessor.cs" />
+    <Compile Include="Queue\CommandQueue.cs" />
+    <Compile Include="IncDec.cs" />
+    <Compile Include="Advanced\ExtendedCmd.cs" />
+    <Compile Include="Internal\ExtendedMsg.cs" />
+    <Compile Include="Advanced\ExtFunction.cs" />
+    <Compile Include="Internal\SingleOutputMode.cs" />
+    <Compile Include="Queue\OnFinishedEventArgs.cs" />
+    <Compile Include="Queue\OnFinishedEventHandler.cs" />
+    <Compile Include="Advanced\PauseCmd.cs" />
+    <Compile Include="PwmSpeed.cs" />
+    <Compile Include="Advanced\CommandType.cs" />
+    <Compile Include="Advanced\ComboDirectCmd.cs" />
+    <Compile Include="DirectState.cs" />
+    <Compile Include="Advanced\ComboPwmCmd.cs" />
+    <Compile Include="Advanced\Command.cs" />
+    <Compile Include="RemoteControl.cs" />
     <Compile Include="Internal\ComboDirectMsg.cs" />
     <Compile Include="Internal\ComboPwmMsg.cs" />
     <Compile Include="Internal\Escape.cs" />
     <Compile Include="Internal\IrPulse.cs" />
     <Compile Include="Internal\IrPulseEncoder.cs" />
     <Compile Include="Internal\Message.cs" />
-    <Compile Include="Internal\Output.cs" />
+    <Compile Include="Output.cs" />
     <Compile Include="Internal\SingleOutputMsg.cs" />
     <Compile Include="Internal\Toggle.cs" />
     <Compile Include="Internal\MessageFactory.cs" />
-    <Compile Include="Transmitter.cs" />
+    <Compile Include="Advanced\SingleOutputCmd.cs" />
+    <Compile Include="Internal\Transmitter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Queue\Task.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.SPOT.Hardware" />

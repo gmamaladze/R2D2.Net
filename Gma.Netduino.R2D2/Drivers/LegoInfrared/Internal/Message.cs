@@ -41,7 +41,7 @@ namespace Gma.Netduino.R2D2.Drivers.LegoInfrared.Internal
 
         private int GetNiblle1()
         {
-            return (Address << 3) | ((byte)Toggle << 2) | ((byte)Escape << 1) | (byte)Channel;
+            return (Address << 3) | ((byte)Escape << 2) | (byte)Channel;
         }
 
         protected abstract int GetNiblle2();

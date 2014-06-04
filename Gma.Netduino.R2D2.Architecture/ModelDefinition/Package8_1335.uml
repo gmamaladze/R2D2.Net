@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="ffabdd95-8562-4186-b78b-ac10f4e36b45"
+  name="SPOT"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="ca6a93f9-a71d-4e3b-b1c4-dc9b88ed562a"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DMicrosoft.SPOT"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="87dffe9d-8210-47bd-9ef6-5c43a118208b"
+        LastKnownName="Hardware"
+        LastKnownLocation="Package9_1335.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="67bb5991-6135-44ff-b042-9cba4e40ff27"
+        name="EventArgs"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="ed6898c1-be4e-4985-995b-b3e42e055a20"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FMicrosoft .NET Micro Framework%2Fv4.3%2FAssemblies%2Fle%2FMicrosoft.SPOT.Native.dll&quot; Namespace%3DMicrosoft.SPOT Type%3DEventArgs"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="be321fde-570a-42e4-b758-3fdd2000db68"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="eb898d4a-827f-4cb4-9a76-80b21348da7d">
+                <propertyInstance
+                  Id="dde2316f-794a-4e83-b436-6669610c9dec"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7c3e3537-396b-4f6f-a0f4-a39fd910612c">
+                <propertyInstance
+                  Id="fa56a9a8-8f0f-488a-87f9-28460be0744a"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9dbd9a78-ecf4-4979-ab0c-5c9a52539a99">
+                <propertyInstance
+                  Id="da77d3d2-b709-4682-b7ee-cd0b0f5f3bb9"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a764a3e4-ff7d-4e57-9122-d2811ae145c9">
+                <propertyInstance
+                  Id="796df9ae-f1c6-478f-91d8-35ae5967c875"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="83c98b7f-a519-457f-8a83-69d69ed54f12">
+                <propertyInstance
+                  Id="854272bf-d240-489d-9e72-00a922d9a659"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

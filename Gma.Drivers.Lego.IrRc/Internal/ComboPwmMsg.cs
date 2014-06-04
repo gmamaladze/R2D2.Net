@@ -4,9 +4,11 @@
 
 #region usings
 
-
+using Gma.Drivers.Lego.IrRc.Advanced;
 
 #endregion
+
+
 
 namespace Gma.Drivers.Lego.IrRc.Internal
 {
@@ -25,24 +27,14 @@ namespace Gma.Drivers.Lego.IrRc.Internal
             get { return Escape.ComboPwmMode; }
         }
 
-        public byte BlueValue
-        {
-            get { return m_Command.BlueValue; }
-        }
-
-        public byte RedValue
-        {
-            get { return m_Command.RedValue; }
-        }
-
         protected override int GetNiblle2()
         {
-            return BlueValue;
+            return (byte) m_Command.BlueSpeed;
         }
 
         protected override int GetNiblle3()
         {
-            return RedValue;
+            return (byte) m_Command.RedSpeed;
         }
     }
 }

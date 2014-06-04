@@ -1,0 +1,1533 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="8fbd0259-f40c-40df-98b5-07d9db6b8df2"
+  name="IrRc"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="584c828c-ef1a-4407-8407-bf498559bfe3"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DGma.Drivers.Lego.IrRc"
+      tag="ViewCode" />
+  </referencesInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="9cee795a-194c-4574-a480-98f1ff2b1d95">
+      <profileInstance
+        Id="36ea947a-f0dd-4cf2-b42e-7875765ce8d8"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <enumeration
+        Id="b2cbbdf4-1b06-4708-b004-08f0024fa208"
+        name="Channel"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="ce032c53-db66-4704-855d-dd574f6b571d"
+            handle="viewcode://./CodeSchema_Enum?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DChannel"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="9c246d43-f944-4dcc-97ad-b460cfb513fc"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ffa0c94d-105b-4b9e-8974-c44a08d852f2">
+                <propertyInstance
+                  Id="8582cc8a-6d63-43fe-b590-dc698c7fbd88"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4049bdfc-dbcb-4823-96a1-0aba94772702">
+                <propertyInstance
+                  Id="79727217-f4f3-42c4-aef6-20bc8766029e"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b76bc0f6-0c85-4663-9175-edf6d83ac807">
+                <propertyInstance
+                  Id="fd8e702c-7ad8-42ae-98d7-a851cab9bdde"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="30883bb0-e1b1-451e-951a-8a374ca69604"
+            name="Ch1">
+            <referencesInternal>
+              <reference
+                Id="6eea76c4-fd5e-4b6b-bcab-2c27aa79e3c7"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DChannel Member%3DCh1"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="ae54f498-b990-4c3e-96e0-b5ee2248d45e"
+            name="Ch2">
+            <referencesInternal>
+              <reference
+                Id="30298836-e0f5-4b6b-a33f-5b8027c6a31a"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DChannel Member%3DCh2"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="a98ae897-65cf-44e4-bed6-63b432f360d3"
+            name="Ch3">
+            <referencesInternal>
+              <reference
+                Id="483c6d4b-b27c-43ef-873c-fa872e68e002"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DChannel Member%3DCh3"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="f8139809-fb2d-4245-b93c-baf3adc36ca0"
+            name="Ch4">
+            <referencesInternal>
+              <reference
+                Id="f59c764c-204f-4ff0-86f2-a71721f3f194"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DChannel Member%3DCh4"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="2d1e703f-21a1-4613-b9b6-3bd69d24505e"
+        name="DirectState"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="fb65e760-2bea-47ae-82e9-4c7197e42c83"
+            handle="viewcode://./CodeSchema_Enum?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DDirectState"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="25889c2e-61d7-4603-a8a1-7805ea0dba9a"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2a16824d-860c-4b95-82dd-4fb1b829b0ac">
+                <propertyInstance
+                  Id="3910493d-108a-4592-82d0-e9048e441c3e"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="01f053e8-a2e1-42f2-a50a-3936a79de61f">
+                <propertyInstance
+                  Id="64fdac8a-9a0e-439a-8ecc-9caf12f0b52a"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="610ca11c-a3a7-47b7-ba81-86c2ad5a44f6">
+                <propertyInstance
+                  Id="59057f40-b63a-4998-9a2c-aede44f21d69"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="6e389f68-05ec-44d2-9f8c-6e823c935fc3"
+            name="RedFlt">
+            <referencesInternal>
+              <reference
+                Id="daaf5cc4-38ff-41f5-9e8c-45eff72d07ba"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DDirectState Member%3DRedFlt"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="c5d7a4e7-c7d0-4a85-ba4e-2bbdfb1f7fe7"
+            name="RedFwd">
+            <referencesInternal>
+              <reference
+                Id="e7fe0548-a72c-46c8-a5fe-e9c36d4b7c07"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DDirectState Member%3DRedFwd"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="32e13dd2-9b63-4b84-9eb1-554dca5e6c07"
+            name="RedRev">
+            <referencesInternal>
+              <reference
+                Id="6695d1ba-3acd-4d66-b202-bdbad2cc93d4"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DDirectState Member%3DRedRev"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="4546d03c-9e64-4cd6-ab72-b53b891fcf5a"
+            name="RedBrk">
+            <referencesInternal>
+              <reference
+                Id="5bb04f42-bdc8-4d0a-a49c-af4e710d38a9"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DDirectState Member%3DRedBrk"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="0946ce29-5aae-482d-ae5c-702fe6d0ab6f"
+            name="BlueFlt">
+            <referencesInternal>
+              <reference
+                Id="3b68b892-3d2b-4566-a8c0-3036c2851fc8"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DDirectState Member%3DBlueFlt"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="f99330de-9157-4ee2-8d72-15483b18a542"
+            name="BlueFwd">
+            <referencesInternal>
+              <reference
+                Id="e77ad8e3-6407-4ac1-b21d-96f9a26baf57"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DDirectState Member%3DBlueFwd"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="7344474b-af9c-4cda-860c-e5604a13081f"
+            name="BlueRev">
+            <referencesInternal>
+              <reference
+                Id="84455e0d-a561-4864-9232-c9fac92a73a5"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DDirectState Member%3DBlueRev"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="b5cc41ac-2ad2-490c-b1f6-5b36b72f88d9"
+            name="BlueBrk">
+            <referencesInternal>
+              <reference
+                Id="317d16a7-dc9a-42de-ac55-2efbfd39c7dc"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DDirectState Member%3DBlueBrk"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="8784aa95-0fa8-4bc4-82aa-7ab0106042b2"
+        name="IncDec"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="89118531-e7ae-4c08-ac83-358f69c1b0a3"
+            handle="viewcode://./CodeSchema_Enum?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DIncDec"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="3013606c-5d7e-472d-a8f4-2dfece95629b"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="dffa09f3-5e53-41c0-aa77-c05bfaa2796a">
+                <propertyInstance
+                  Id="2294f654-6398-43fc-a0dc-97bc2048b165"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f1d8983b-a6e1-437d-8e8a-b238287a2e74">
+                <propertyInstance
+                  Id="f6bd01b4-e79b-4c90-8d32-129a5bec37f7"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e7f3d85f-ed59-40b6-9dd6-630cafb1f757">
+                <propertyInstance
+                  Id="bad721b5-a213-422b-96ab-b9979ca9965f"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="57850acd-f3bc-488a-843c-e7728e43b5ab"
+            name="ToggleFullForward">
+            <referencesInternal>
+              <reference
+                Id="fb29ac61-df90-48ad-9490-212a69a0c610"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DIncDec Member%3DToggleFullForward"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="35870304-b792-4433-9891-18871f0a03f3"
+            name="ToggleDirection">
+            <referencesInternal>
+              <reference
+                Id="9eca7b1f-c352-4d1b-9a77-c9d564e904fc"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DIncDec Member%3DToggleDirection"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="a5ed66a5-7ffb-436b-8415-7fb8ab110b4d"
+            name="IncrementNumericalPwm">
+            <referencesInternal>
+              <reference
+                Id="ba4ad264-9bdf-4363-ad20-f9785dbeaf88"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DIncDec Member%3DIncrementNumericalPwm"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="6a3648a9-ae43-4cc4-9ceb-550f3ac00c6c"
+            name="DecrementNumericalPwm">
+            <referencesInternal>
+              <reference
+                Id="131bace4-7e4e-4aa2-95f1-faf40d277cdf"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DIncDec Member%3DDecrementNumericalPwm"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="9cc7c283-3c04-44c2-92e5-1756437807ef"
+            name="IncrementPwm">
+            <referencesInternal>
+              <reference
+                Id="0b73b5ea-9219-4cb5-b798-e4c3dee2c8f0"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DIncDec Member%3DIncrementPwm"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="9ad1f8e4-686d-4da0-930f-829d75440311"
+            name="DecrementPwm">
+            <referencesInternal>
+              <reference
+                Id="267ebfdf-f7b2-486e-af43-5118ba9777d0"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DIncDec Member%3DDecrementPwm"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="3d385334-8dba-49bf-b1a2-6a395fc37246"
+            name="FullForward">
+            <referencesInternal>
+              <reference
+                Id="ab0571f1-67c2-4963-9407-13d24f696ff5"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DIncDec Member%3DFullForward"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="97af10a1-e497-47da-a589-d676d08449a8"
+            name="FullBackward">
+            <referencesInternal>
+              <reference
+                Id="9416d69e-4cbc-43da-a161-7fcbeed77c11"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DIncDec Member%3DFullBackward"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="17bd8098-2cd8-42d4-9487-18f218501869"
+            name="ToggleFullForwardBackward">
+            <referencesInternal>
+              <reference
+                Id="2f80a9c1-73b9-4d9f-b071-6bf084aae6d9"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DIncDec Member%3DToggleFullForwardBackward"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="f061d22f-2447-451f-9494-23a97e01e6a7"
+            name="ClearC1">
+            <referencesInternal>
+              <reference
+                Id="7cc21fde-8d4b-4433-bc27-fe2e1ae7f6f9"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DIncDec Member%3DClearC1"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="5b206d45-c396-4f10-833e-4553f2939bdf"
+            name="SetC1">
+            <referencesInternal>
+              <reference
+                Id="baf55ceb-e0d6-4471-a743-9130caba4048"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DIncDec Member%3DSetC1"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="caf74338-eed5-4cff-8381-2b8aa0251a25"
+            name="ToggleC1">
+            <referencesInternal>
+              <reference
+                Id="3e18ea37-72ea-4b59-a1e3-1a6818e21340"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DIncDec Member%3DToggleC1"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="250780e7-3d36-464c-a75f-dc25f52e270d"
+            name="ClearC2">
+            <referencesInternal>
+              <reference
+                Id="3fe36f88-e232-431e-b29d-c1d079e878ee"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DIncDec Member%3DClearC2"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="a172a0ae-bfc7-4f7e-9e25-95850b8f45e8"
+            name="SetC2">
+            <referencesInternal>
+              <reference
+                Id="e94326d9-35d3-40ad-89e2-87dd18ca5711"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DIncDec Member%3DSetC2"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="aef96b30-205d-4079-b0b1-b18a26e23c3a"
+            name="ToggleC2">
+            <referencesInternal>
+              <reference
+                Id="d3442742-d0d6-467f-a14e-09d1df71f5a2"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DIncDec Member%3DToggleC2"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="816e8294-ad35-4724-8dc2-f49679b27fd6"
+            name="ToggleFullBackward">
+            <referencesInternal>
+              <reference
+                Id="bd3f4cf5-b337-4761-ad8c-db07bcd42e6f"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DIncDec Member%3DToggleFullBackward"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="895a7710-da0c-4ee6-a35b-76965e64f43d"
+        name="Output"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="f2a22f53-870a-45f7-8273-67c3960f286a"
+            handle="viewcode://./CodeSchema_Enum?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DOutput"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="c0c84879-3fe8-4871-8f02-98b19d0aaaa9"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c5c2ead3-1387-4729-acc0-9425a0edd5d0">
+                <propertyInstance
+                  Id="5f2f9127-92ef-4981-9e07-9e99fa373b5e"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e8095940-c435-486b-aa6d-58ae929ff1ac">
+                <propertyInstance
+                  Id="700415ed-1189-4d8a-bffc-33a17858bcd9"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fe08272c-345c-4b3f-a50e-e772428d3c1c">
+                <propertyInstance
+                  Id="2623ab42-1cc5-4ee5-85c6-a4eb12947290"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="919570f8-531a-476f-b63c-2ffffc73cd86"
+            name="Blue">
+            <referencesInternal>
+              <reference
+                Id="d0f3a64d-acde-421d-b33c-d8cd70c95964"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DOutput Member%3DBlue"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="d51e6a31-93c7-4bdf-bdfb-20192bfbfcf5"
+            name="Red">
+            <referencesInternal>
+              <reference
+                Id="b49cc985-7b26-41ff-88e3-9656e509884d"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DOutput Member%3DRed"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="efdd01cd-c034-4b11-80c3-0e4a639c2bf8"
+        name="PwmSpeed"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="1f32be07-364d-41f9-a017-d4c14b6b5b9d"
+            handle="viewcode://./CodeSchema_Enum?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DPwmSpeed"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="54031ac0-9336-4f28-9134-e0d03c379da5"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c2fb8164-b480-4b04-a27f-d65771d1c017">
+                <propertyInstance
+                  Id="14808f3f-6d33-4b67-994b-1db249ff96e0"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e6c32955-241a-422f-8e97-772a6f87f1fc">
+                <propertyInstance
+                  Id="2b339651-a6ce-4a0b-b2ae-a24fa52bae0a"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9cff9dda-736f-4cbc-a31b-3b37df00c523">
+                <propertyInstance
+                  Id="990ed78c-fd6b-4143-a382-6edecd4932d1"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="89b6306a-4483-4199-9b5f-e4341c42d179"
+            name="Float">
+            <referencesInternal>
+              <reference
+                Id="48f1529a-126e-4321-8776-372dab31cd97"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DPwmSpeed Member%3DFloat"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="be7a5ae6-ddc1-41db-80a1-886a22edca79"
+            name="ForwardStep1">
+            <referencesInternal>
+              <reference
+                Id="4ef30066-e1ff-4aa3-b60b-a0c2e361e2a7"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DPwmSpeed Member%3DForwardStep1"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="a0f680b4-02f7-4876-a853-99bafac2835f"
+            name="ForwardStep2">
+            <referencesInternal>
+              <reference
+                Id="7a94d8fa-9772-4c31-a96b-1f6d5f87f228"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DPwmSpeed Member%3DForwardStep2"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="e85bd006-d868-42c8-b994-2949dd2f823d"
+            name="ForwardStep3">
+            <referencesInternal>
+              <reference
+                Id="53894efa-d78d-4cc4-bda0-8d6ea060cd62"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DPwmSpeed Member%3DForwardStep3"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="2cc8b463-850d-4e70-a5c9-2457a88515c0"
+            name="ForwardStep4">
+            <referencesInternal>
+              <reference
+                Id="a6de807e-b021-4d10-bc96-2642e66eb4f5"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DPwmSpeed Member%3DForwardStep4"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="e74a5f1c-62ee-4193-b580-4a0319881db1"
+            name="ForwardStep5">
+            <referencesInternal>
+              <reference
+                Id="5852ebab-8306-48f7-a6c3-338415704345"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DPwmSpeed Member%3DForwardStep5"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="f48753fe-2967-4b2e-8159-0b2111b43407"
+            name="ForwardStep6">
+            <referencesInternal>
+              <reference
+                Id="3131a0af-bfe0-41e6-bcd0-245c60bd8090"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DPwmSpeed Member%3DForwardStep6"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="ffb2ae55-8819-4a0a-8c32-626ef6d1c355"
+            name="ForwardStep7">
+            <referencesInternal>
+              <reference
+                Id="ffa3f2bc-a3a3-4f09-8061-4afcc840ac2a"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DPwmSpeed Member%3DForwardStep7"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="afe31fd9-a434-4641-b837-c0671ea14a48"
+            name="BreakThenFloat">
+            <referencesInternal>
+              <reference
+                Id="82dfba27-4f3a-4204-97be-8e3e31116cb2"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DPwmSpeed Member%3DBreakThenFloat"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="1f720dbf-f36e-4e0a-85c7-c7f2ea3fc1e6"
+            name="BackwardStep7">
+            <referencesInternal>
+              <reference
+                Id="bcc93c30-e574-461d-a54d-0029d571c205"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DPwmSpeed Member%3DBackwardStep7"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="64e8f2e7-9bdc-4869-8460-c7938985f7ff"
+            name="BackwardStep6">
+            <referencesInternal>
+              <reference
+                Id="2040e622-29f4-4329-9fb1-35c2daec161e"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DPwmSpeed Member%3DBackwardStep6"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="91a9dfba-fe65-453f-b189-9d8c90fe55ab"
+            name="BackwardStep5">
+            <referencesInternal>
+              <reference
+                Id="452f6a2e-17da-448e-bd0e-055e6f83cc91"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DPwmSpeed Member%3DBackwardStep5"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="49347b55-c336-468f-bbdf-42167d20cf8d"
+            name="BackwardStep4">
+            <referencesInternal>
+              <reference
+                Id="f36bba06-b12e-42ef-96bd-23d1b1a765c6"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DPwmSpeed Member%3DBackwardStep4"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="a4919e17-dc33-498c-a2f7-9b09554efb8f"
+            name="BackwardStep3">
+            <referencesInternal>
+              <reference
+                Id="31cca9bd-bcf3-4426-b2c4-f88879f43534"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DPwmSpeed Member%3DBackwardStep3"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="372df0c6-6e42-4c0b-8ba2-d56dcdafd571"
+            name="BackwardStep2">
+            <referencesInternal>
+              <reference
+                Id="a8417828-0c64-446f-8d3d-80362fcaaf71"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DPwmSpeed Member%3DBackwardStep2"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="117bc124-ad45-453f-8e61-c66d208a3d8a"
+            name="BackwardStep1">
+            <referencesInternal>
+              <reference
+                Id="8c3de05a-d2a8-4a67-a6d9-52600a0c0e93"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DPwmSpeed Member%3DBackwardStep1"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1ee37bd4-f654-49d7-8494-6c3ee8255b08"
+        name="RemoteControl"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="e746d29b-1e07-494e-9a3a-446c5003033a"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DRemoteControl"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="136fa3e5-33e1-49ed-a74a-92949e154e32"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="78dc939b-5789-4188-a349-ee6bfc7daaa1">
+                <propertyInstance
+                  Id="9bba3d40-b717-46fe-b3f9-407d315407eb"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="402ae48c-0498-458b-a550-82fdc69d1395">
+                <propertyInstance
+                  Id="697b9caf-b387-4e7b-8f94-5be2cb338778"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="034d0822-741e-43d3-baed-44ae8a406d61">
+                <propertyInstance
+                  Id="3c0b0e75-4e17-45b9-bd22-a8669a3070da"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e33f1ac8-0ee4-4a1b-83c7-b1aeea217ebb">
+                <propertyInstance
+                  Id="6d47809b-f683-48f2-8887-c360f36139e7"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="17bd476f-d262-484a-a06e-33b5482124af">
+                <propertyInstance
+                  Id="b2f306bd-2b8e-496c-bd0f-3e7fe6798a7b"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="67c750f2-50e5-48f8-aac3-ad05ed7d5492"
+            name="m_CommandProcessor"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="08aaa59b-f281-4cfc-b9ff-6f0a2f9866a7"
+                handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DRemoteControl Member%3Dm_CommandProcessor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8cc56083-69ce-4b9e-baba-ab9d33c6927d"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ff0c6947-7fe5-4432-a91f-69ea300211f3">
+                    <propertyInstance
+                      Id="542dbd17-563a-4857-8245-8741fd8a3a50"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="332f4ce1-fafd-4b4d-8e68-09ee3c53b9a2">
+                    <propertyInstance
+                      Id="698e33b4-3132-4b68-a09b-52107910e167"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="495ae7dd-7d67-4cf9-8017-efd9c26ddb76">
+                    <propertyInstance
+                      Id="12dbd194-49e9-428c-99c5-c49bc4a5e97e"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e1f69bd0-08fc-4244-bb45-9be92e7a628c">
+                    <propertyInstance
+                      Id="45942df7-8d67-4fc0-9eb0-8f74f83f4a88"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c1bc4b1f-2550-4aca-a950-ce8120db6e9c">
+                    <propertyInstance
+                      Id="7a3befc7-1a15-4021-83d3-9820120ae8fc"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="68ae9bd7-84a2-4a41-aae9-772cc9e975ed"
+                LastKnownName="CommandProcessor"
+                LastKnownLocation="Package4_1335.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="32f944da-c0e9-4637-b3f4-4596673a38d0"
+            name="RemoteControl"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="91d3a884-3067-4192-8c60-e9042e6bd096"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DRemoteControl Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DChannel)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4de9f282-b523-4518-b8ca-e79caa32ab2e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fcc01d8c-3d08-441f-8556-f4766f66070a">
+                    <propertyInstance
+                      Id="244f72d3-0c3e-4fb9-bc23-0b595d0c03b3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="334f364e-2e7a-4e74-b8b7-8af4f7be9437">
+                    <propertyInstance
+                      Id="b2335d6d-3561-4767-b666-e08dfa07301c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="292e749e-3df4-4a29-92a5-9429c756c553">
+                    <propertyInstance
+                      Id="a2055600-dbb8-405f-9376-4ea27608fe42"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6b955b30-5c66-47c2-a6e2-be014a9ba70f">
+                    <propertyInstance
+                      Id="10f54a36-c05c-4d1d-bca6-ee0dd736257b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5506c43b-a8b4-4867-9362-71fa1195b4e4">
+                    <propertyInstance
+                      Id="6e2aaf07-99d1-4dee-8ef2-1a7016108725"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b06eefbc-ef3b-47c1-aeb3-43b4be9d4a4a">
+                    <propertyInstance
+                      Id="82fcb623-208c-493e-b683-d4cdb1c6c48a"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f98912c9-3dad-4a32-84eb-d8d51f581d56"
+                  name="channel"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="c3c1a02d-7a84-4baf-aba5-b5c981924058"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DRemoteControl Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DChannel)]) ParameterIdentifier%3Dchannel"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="b2cbbdf4-1b06-4708-b004-08f0024fa208"
+                      LastKnownName="Channel"
+                      LastKnownLocation="Package3_1335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="899641d3-ee6b-409b-84e6-f5b15c49dd70"
+            name="RemoteControl"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="5feb6f69-c87b-4a64-b9d4-bda24c10ee34"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DRemoteControl Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Advanced Type%3DCommandProcessor)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="15be7eb8-95c4-4abf-902b-e8e3d1c61cab"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b0eeaca8-5cde-430e-bd7e-ce1958aa053d">
+                    <propertyInstance
+                      Id="b8e4550a-109e-4068-bb9e-f8f72a1ceaa9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="46df7784-cfd8-42f1-9c78-451b479f4f3a">
+                    <propertyInstance
+                      Id="7d8c4086-d95e-460a-98b0-a295f629d305"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="67d5305b-29a8-4d0d-8c70-95428670c6cb">
+                    <propertyInstance
+                      Id="451df939-7e72-4bdc-bac8-3f74377e918d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8be4cada-cdce-4248-af03-55662b0e6b5a">
+                    <propertyInstance
+                      Id="20140956-8769-4f02-bc5c-4660cb810680"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="403e5272-2f04-4b70-9395-79158f2314f5">
+                    <propertyInstance
+                      Id="88f35669-16cb-4b99-986f-63262967983c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8c9ef4f4-d5a2-4d7f-8c6e-85c8b6632b6b">
+                    <propertyInstance
+                      Id="da0a611d-14e6-4f73-aa02-00b258e96290"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="627ac596-de96-4cc9-9df8-a9dc33c29481"
+                  name="commandProcessor"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="c636d9cf-ce5d-48f2-9143-60d5daaa2f91"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DRemoteControl Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Advanced Type%3DCommandProcessor)]) ParameterIdentifier%3DcommandProcessor"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="68ae9bd7-84a2-4a41-aae9-772cc9e975ed"
+                      LastKnownName="CommandProcessor"
+                      LastKnownLocation="Package4_1335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="43d19722-9e56-4ddb-9ec9-dbab59917a62"
+            name="Execute"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="5247ae8c-0fb3-456f-a6d4-852afdd74424"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DRemoteControl Member%3D(Name%3DExecute OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Advanced Type%3DExtFunction)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2250bec9-48f7-443f-aed2-bd5b6da091b5"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="28a7c4e8-f394-4f74-aadd-3e82c98f4884">
+                    <propertyInstance
+                      Id="30d3a22e-57ab-48ac-83de-59d56fd13357"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="819f3e7d-1786-4cef-b964-a805d539e1e5">
+                    <propertyInstance
+                      Id="f89e788e-0dcc-49c6-95ac-d6a02d5d66f1"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="29a072ef-61b2-48ac-ab2a-c203208af353">
+                    <propertyInstance
+                      Id="7b8d3523-2bda-4837-9153-c5191ce39d9c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8fc9fa7a-1ae7-45ba-b892-e7e7ff56c68e">
+                    <propertyInstance
+                      Id="12c64c11-ca8c-403a-b136-e7b74682acb2"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4425f3b2-f4ca-4145-a5e5-a497a1435cb1">
+                    <propertyInstance
+                      Id="e20fb613-5842-4219-b15b-79ba17c4e5ac"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e37bf226-34d1-4baa-b74d-e1ca877de93c">
+                    <propertyInstance
+                      Id="ef2588be-824b-4c1b-aede-3f5410ef4d05"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c88554b3-5228-4fb6-a4bb-62645927a35b"
+                  name="extFunction"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="c33bb3cf-0aa9-4463-83dd-a44ac72ed15f"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DRemoteControl Member%3D(Name%3DExecute OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc.Advanced Type%3DExtFunction)]) ParameterIdentifier%3DextFunction"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="4e7ef6bc-78f5-41fe-81ab-e0c396b2ec81"
+                      LastKnownName="ExtFunction"
+                      LastKnownLocation="Package4_1335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="b4dcd25e-7ae0-4e68-9132-0394a6e27071"
+            name="Execute"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="b9ec29b6-c65c-4d70-92af-1bc0e1313f90"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DRemoteControl Member%3D(Name%3DExecute OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DDirectState)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DDirectState)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6629ac07-4298-431c-9d7f-188047395f44"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3fdeb792-b404-498d-bcf4-5ac20d814c7e">
+                    <propertyInstance
+                      Id="463ed934-8e9e-419f-8b64-b1e7181ee5e0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6d8d1ebc-46c4-4310-8dbd-acc7f6eba350">
+                    <propertyInstance
+                      Id="85563fb2-ec28-4d4d-96c4-849a676f96cc"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a463bdb6-783a-466e-b51b-c9f7579c0c43">
+                    <propertyInstance
+                      Id="702c98ec-c8ec-4104-8b79-2e371ca31a06"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e2e9790a-c5f3-4fbb-a4aa-8f819167d1d2">
+                    <propertyInstance
+                      Id="e8e6c7b5-b025-4318-a8d4-7344350fdcb6"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e041e818-ec07-43c1-8289-bc47a77c722e">
+                    <propertyInstance
+                      Id="1f24f2cd-d768-4042-9e62-823d0f0853f9"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c6dd38a2-8589-43bd-a3d5-cdfac3c8cf31">
+                    <propertyInstance
+                      Id="9917e283-95f3-4490-9c83-db982bd120a2"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1386e7bb-df08-4496-9cf5-509f7cade866"
+                  name="blueState"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="c080d971-d614-4928-8337-b16a3aca790d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DRemoteControl Member%3D(Name%3DExecute OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DDirectState)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DDirectState)]) ParameterIdentifier%3DblueState"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="2d1e703f-21a1-4613-b9b6-3bd69d24505e"
+                      LastKnownName="DirectState"
+                      LastKnownLocation="Package3_1335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9f484ba9-8ae5-4d3f-a9cc-1077616fa055"
+                  name="redState"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="13b41c14-b1df-48b4-8c52-8d85ee6f4333"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DRemoteControl Member%3D(Name%3DExecute OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DDirectState)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DDirectState)]) ParameterIdentifier%3DredState"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="2d1e703f-21a1-4613-b9b6-3bd69d24505e"
+                      LastKnownName="DirectState"
+                      LastKnownLocation="Package3_1335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a3db6921-f980-454e-ba0e-3512fa3403d7"
+            name="Execute"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e4556c5f-67cd-468d-9982-58e0a8cd5d01"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DRemoteControl Member%3D(Name%3DExecute OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DPwmSpeed)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DPwmSpeed)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e73a8643-b836-465a-9260-c214d6e6f6fe"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="532c7c52-c3a3-42b0-88e8-491c0eb288a9">
+                    <propertyInstance
+                      Id="d0d83187-40fd-48c8-8358-f49a0d1e69f0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="80abcfa8-5c04-4d6d-8c56-77a227a8180e">
+                    <propertyInstance
+                      Id="5fd0d617-a28e-4604-8dcb-55f6426b5167"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1a4b21a8-f488-440e-b016-ab973d47c937">
+                    <propertyInstance
+                      Id="5fc7d259-0ae9-4160-96ed-fced8fe67b5e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8c2c936f-11ae-4531-8a5d-91f1b367b658">
+                    <propertyInstance
+                      Id="6f9a3e89-aaa6-40da-9511-ba8119a68020"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="67f50708-7244-4865-8c35-f498f8dac1cd">
+                    <propertyInstance
+                      Id="34bf99b0-e156-48f5-b3eb-8454eb6264ee"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="835d8602-d1b9-44e1-a953-31c5841bf6cf">
+                    <propertyInstance
+                      Id="32adea12-f0b4-4550-b360-01cab554b9ad"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9c1222ed-422a-41f7-b56c-3f02e169ae52"
+                  name="redSpeed"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="38782366-6006-4f44-bafd-07209d0bc26c"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DRemoteControl Member%3D(Name%3DExecute OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DPwmSpeed)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DPwmSpeed)]) ParameterIdentifier%3DredSpeed"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="efdd01cd-c034-4b11-80c3-0e4a639c2bf8"
+                      LastKnownName="PwmSpeed"
+                      LastKnownLocation="Package3_1335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="eee9e5cf-eb8d-4e2c-bcea-73642414fcca"
+                  name="blueSpeed"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="cf799730-4836-4ea0-ab21-707a132c8ffc"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DRemoteControl Member%3D(Name%3DExecute OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DPwmSpeed)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DPwmSpeed)]) ParameterIdentifier%3DblueSpeed"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="efdd01cd-c034-4b11-80c3-0e4a639c2bf8"
+                      LastKnownName="PwmSpeed"
+                      LastKnownLocation="Package3_1335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="3c99dcdc-744b-4b59-a52b-65ae299766d3"
+            name="Execute"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="ad83a490-8fa0-4efc-b018-db772cb4ca45"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DRemoteControl Member%3D(Name%3DExecute OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DOutput)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DIncDec)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c6a65f5f-8e65-4f50-b373-2acbfbf70b0c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b20ffcc5-6b42-4f00-af82-413a6611bf70">
+                    <propertyInstance
+                      Id="7c8ad353-0223-4ad4-b623-5a0ca0ef1e60"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1de3f97b-d89a-4aa6-b9b8-8cc5f39c6481">
+                    <propertyInstance
+                      Id="6136d61e-c8f8-4c1b-9a85-1f0a3102560a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2333c025-adf0-4f28-a95a-3c87371006ac">
+                    <propertyInstance
+                      Id="72ba9799-1bd1-4ab2-b1e4-498c064f6263"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4156f905-ad95-4193-9489-cccca175f4f3">
+                    <propertyInstance
+                      Id="b0b86a60-6f69-4813-8b2f-8c86b0000ce6"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="90463469-5d82-40b1-a923-d6c13f96e50d">
+                    <propertyInstance
+                      Id="f0689047-0a4b-4f03-b9e0-e7159db47e41"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="11f0be2f-a2c5-4278-9736-311149a73432">
+                    <propertyInstance
+                      Id="63409029-7a3b-4695-a6bc-07f5bded48a1"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f43a0b7b-9af0-4ebc-8180-36610eb1d9c2"
+                  name="output"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d1b637e1-3ab2-497a-8faa-b76052932b50"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DRemoteControl Member%3D(Name%3DExecute OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DOutput)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DIncDec)]) ParameterIdentifier%3Doutput"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="895a7710-da0c-4ee6-a35b-76965e64f43d"
+                      LastKnownName="Output"
+                      LastKnownLocation="Package3_1335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6f50d51f-356a-4b06-bcdd-1d080904f6b5"
+                  name="incDec"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="8728f029-e325-412e-8ad5-edaedd65a298"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DRemoteControl Member%3D(Name%3DExecute OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DOutput)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DIncDec)]) ParameterIdentifier%3DincDec"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="8784aa95-0fa8-4bc4-82aa-7ab0106042b2"
+                      LastKnownName="IncDec"
+                      LastKnownLocation="Package3_1335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="74705735-41ae-48db-85b2-7dfa583c6381"
+            name="Execute"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="b5995620-8c9a-4af4-994e-10d9f3763931"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DRemoteControl Member%3D(Name%3DExecute OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DOutput)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DPwmSpeed)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="129570ac-84a0-45e5-a0dd-458d3c3ef87b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b46970a4-70b6-4f19-b707-bf93862559e2">
+                    <propertyInstance
+                      Id="81a554bc-5b0e-4040-b7ae-096e389a6f3c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="11fe260e-82f2-4d27-9b78-fe459b806319">
+                    <propertyInstance
+                      Id="1aa608b4-07c1-42ad-a135-766e9eb460fa"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3c173799-734e-497b-9210-f6986d16dbfd">
+                    <propertyInstance
+                      Id="0771c50d-4d24-4545-93bc-1bed784fec70"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7e319091-7b9e-4b8e-be5b-cb662854411f">
+                    <propertyInstance
+                      Id="6ff91c57-3ae7-42da-9a2e-7885de4f89d7"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="98705333-76f1-40a8-a8ba-1d8ce4a9924f">
+                    <propertyInstance
+                      Id="b8573af1-7b68-4799-8982-6b30eb3dd20a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6c014a71-811e-4430-a347-5da00a19e7f9">
+                    <propertyInstance
+                      Id="7efd996b-9484-4fa4-95d9-317573f10a46"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1177a0d0-51f7-4ba9-9258-72049e561965"
+                  name="output"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="086cb557-04d9-41fd-9587-89c3ce820f89"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DRemoteControl Member%3D(Name%3DExecute OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DOutput)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DPwmSpeed)]) ParameterIdentifier%3Doutput"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="895a7710-da0c-4ee6-a35b-76965e64f43d"
+                      LastKnownName="Output"
+                      LastKnownLocation="Package3_1335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b0b090eb-8c45-455d-9259-f47d52157f05"
+                  name="speed"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d3ad3ce7-3af2-43fe-83bc-e62d829c551d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DRemoteControl Member%3D(Name%3DExecute OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DOutput)%2C(Assembly%3Dfile:%2F%2F%2FD:%2Fgithub%2FR2D2.Net%2FGma.Drivers.Lego.IrRc%2Fbin%2FDebug%2FGma.Drivers.Lego.IrRc.dll Namespace%3DGma.Drivers.Lego.IrRc Type%3DPwmSpeed)]) ParameterIdentifier%3Dspeed"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="efdd01cd-c034-4b11-80c3-0e4a639c2bf8"
+                      LastKnownName="PwmSpeed"
+                      LastKnownLocation="Package3_1335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="358bd543-9d82-48d8-833c-8954414b2c15"
+        LastKnownName="Advanced"
+        LastKnownLocation="Package4_1335.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="39f4aa0a-a3a7-43f0-96a9-c81024cb3539"
+        LastKnownName="Internal"
+        LastKnownLocation="Package5_1335.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="227cfd5c-53f5-4275-88aa-69c16a119836"
+        LastKnownName="Queue"
+        LastKnownLocation="Package10_1335.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
