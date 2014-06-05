@@ -1,4 +1,6 @@
-namespace Gma.Netmf.Hardware.Lego.IrRc.Commands
+using Gma.Netmf.Hardware.Lego.PowerFunctions.Rc;
+
+namespace Gma.Netmf.Hardware.Lego.PowerFunctions.Commands
 {
     public class ExtendedCmd : Command
     {

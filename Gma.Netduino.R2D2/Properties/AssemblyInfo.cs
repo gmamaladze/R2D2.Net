@@ -1,10 +1,17 @@
-﻿using System.Reflection;
-using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices;
+﻿// This code is distributed under MIT license. 
+// Copyright (c) 2014 George Mamaladze
+// See license.txt or http://opensource.org/licenses/mit-license.php
+
+#region usings
+
+using System.Reflection;
+
+#endregion
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
+
 [assembly: AssemblyTitle("Gma.Netduino.R2D2")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
@@ -21,5 +28,6 @@ using System.Runtime.InteropServices;
 //      Build Number
 //      Revision
 //
+
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]

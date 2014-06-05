@@ -4,11 +4,13 @@
 
 #region usings
 
-
+using Gma.Netmf.Hardware.Lego.PowerFunctions.Rc;
 
 #endregion
 
-namespace Gma.Netmf.Hardware.Lego.IrRc.Commands
+
+
+namespace Gma.Netmf.Hardware.Lego.PowerFunctions.Commands
 {
     public class ComboPwmCmd : Command
     {

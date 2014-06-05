@@ -9,7 +9,7 @@ Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Gma.Netduino.R2D2.Architect
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gma.Netduino.R2D2.Drivers.Tests", "Gma.Netduino.R2D2.Drivers.Tests\Gma.Netduino.R2D2.Drivers.Tests.csproj", "{AEA43D29-629E-4922-AD8F-A2E3A8795642}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gma.Netmf.Hardware.Lego.IrRc", "Gma.Drivers.Lego.IrRc\Gma.Netmf.Hardware.Lego.IrRc.csproj", "{DE7221E0-F7D2-4263-97F6-DEE1819AD2D6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gma.Netmf.Hardware.Lego.PowerFunctions", "Gma.Drivers.Lego.IrRc\Gma.Netmf.Hardware.Lego.PowerFunctions.csproj", "{DE7221E0-F7D2-4263-97F6-DEE1819AD2D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

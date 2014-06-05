@@ -2,11 +2,13 @@
 // Copyright (c) 2014 George Mamaladze
 // See license.txt or http://opensource.org/licenses/mit-license.php
 
-namespace Gma.Netmf.Hardware.Lego.IrRc.Internal
+namespace Gma.Netmf.Hardware.Lego.PowerFunctions.Rc
 {
-    internal enum Toggle : byte
+    public enum Channel : byte
     {
-        Even = 0,
-        Odd = 1
-    }
+        Ch1 = 0x0,
+        Ch2 = 0x1,
+        Ch3 = 0x2,
+        Ch4 = 0x3
+    };
 }

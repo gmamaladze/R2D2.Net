@@ -4,26 +4,27 @@
 
 #region usings
 
-using Gma.Netmf.Hardware.Lego.IrRc.Commands;
+using Gma.Netmf.Hardware.Lego.PowerFunctions.Commands;
+using Gma.Netmf.Hardware.Lego.PowerFunctions.Rc;
 
 #endregion
 
 
 
-namespace Gma.Netmf.Hardware.Lego.IrRc.Internal
+namespace Gma.Netmf.Hardware.Lego.PowerFunctions.Protocol
 {
-    internal class ComboDirectMsg : Message
+    internal class ComboPwmMsg : Message
     {
         //  Extended mode message format
         //     +--------------+--------------+--------------+-------------+
         //     |   Nibble 1   |   Nibble 2   |   Nibble 3   |   LRC       |
         //     +--------------+--------------+--------------+-------------+
-        //     |  T  E  C  C  |  a  0  0  1  |  B  B  A  A  | L  L  L  L  |
+        //     |  T  E  C  C  |  B  B  B  B  |  A  A  A  A  | L  L  L  L  |
         //     +--------------+--------------+--------------+-------------+
 
-        private readonly ComboDirectCmd m_Command;
+        private readonly ComboPwmCmd m_Command;
 
-        public ComboDirectMsg(Channel channel, Toggle toggle, ComboDirectCmd command)
+        public ComboPwmMsg(Channel channel, Toggle toggle, ComboPwmCmd command)
             : base(channel, toggle)
         {
             m_Command = command;
@@ -31,17 +32,17 @@ namespace Gma.Netmf.Hardware.Lego.IrRc.Internal
 
         public override Escape Escape
         {
-            get { return Escape.UseMode0; }
+            get { return Escape.ComboPwmMode1; }
         }
 
         protected override int GetNiblle2()
         {
-            return Address<<3 | 0x1; //001
+            return (byte) m_Command.BlueSpeed;
         }
 
         protected override int GetNiblle3()
         {
-            return (int) m_Command.BlueState << 2 | (int) m_Command.RedState;
+            return (byte) m_Command.RedSpeed;
         }
     }
 }

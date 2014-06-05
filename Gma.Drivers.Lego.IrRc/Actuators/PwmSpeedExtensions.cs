@@ -1,10 +1,19 @@
-using System;
+// This code is distributed under MIT license. 
+// Copyright (c) 2014 George Mamaladze
+// See license.txt or http://opensource.org/licenses/mit-license.php
 
-namespace Gma.Netmf.Hardware.Lego.IrRc.Motors
+#region usings
+
+using System;
+using Gma.Netmf.Hardware.Lego.PowerFunctions.Rc;
+
+#endregion
+
+namespace Gma.Netmf.Hardware.Lego.PowerFunctions.Actuators
 {
     public static class PwmSpeedExtensions
     {
-        private static readonly PwmSpeed[] AscendingSpeeds = new PwmSpeed[]
+        private static readonly PwmSpeed[] AscendingSpeeds =
         {
             PwmSpeed.BackwardStep7,
             PwmSpeed.BackwardStep6,
@@ -25,15 +34,14 @@ namespace Gma.Netmf.Hardware.Lego.IrRc.Motors
 
         public static PwmSpeed FromPercent(this int percent)
         {
-            var scaledSpeed = AscendingSpeeds.Length / 200.0 * (percent +  100);
-            var index = (int)Math.Ceiling(scaledSpeed);
+            var index = (int)Math.Truncate(75.0 * (100 + percent) / 15000);
             return AscendingSpeeds[index];
         }
 
         public static PwmSpeed FromAngle(this int angle)
         {
-            var scaledSpeed = AscendingSpeeds.Length / 180.0 * angle;
-            var index = (int)Math.Ceiling(scaledSpeed);
+            var scaledSpeed = (AscendingSpeeds.Length-1)/180.0*angle;
+            var index = (int) Math.Ceiling(scaledSpeed);
             return AscendingSpeeds[index];
         }
 

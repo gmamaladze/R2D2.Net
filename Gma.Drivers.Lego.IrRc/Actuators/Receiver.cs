@@ -1,15 +1,19 @@
-namespace Gma.Netmf.Hardware.Lego.IrRc.Motors
-{
+// This code is distributed under MIT license. 
+// Copyright (c) 2014 George Mamaladze
+// See license.txt or http://opensource.org/licenses/mit-license.php
 
-    internal class Receiver
+using Gma.Netmf.Hardware.Lego.PowerFunctions.Rc;
+
+namespace Gma.Netmf.Hardware.Lego.PowerFunctions.Actuators
+{
+    public class Receiver
     {
-        private readonly Connector m_RedConnector;
         private readonly Connector m_BlueConnector;
+        private readonly Connector m_RedConnector;
 
         public Receiver(Channel channel)
             : this(new RemoteControl(channel))
         {
-            
         }
 
         internal Receiver(RemoteControl remoteControl)

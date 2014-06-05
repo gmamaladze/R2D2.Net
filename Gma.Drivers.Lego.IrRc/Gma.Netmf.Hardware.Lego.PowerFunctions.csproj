@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <AssemblyName>Gma.Netmf.Hardware.Lego.IrRc</AssemblyName>
+    <AssemblyName>Gma.Netmf.Hardware.Lego.PowerFunctions</AssemblyName>
     <OutputType>Library</OutputType>
-    <RootNamespace>Gma.Netmf.Hardware.Lego.IrRc</RootNamespace>
+    <RootNamespace>Gma.Netmf.Hardware.Lego.PowerFunctions</RootNamespace>
     <ProjectTypeGuids>{b69e3092-b931-443c-abe7-7e7b65f2a37f};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
@@ -36,34 +36,34 @@
     <Compile Include="Actuators\Motor.cs" />
     <Compile Include="Actuators\PwmSpeedExtensions.cs" />
     <Compile Include="Actuators\Servo.cs" />
-    <Compile Include="Channel.cs" />
+    <Compile Include="Rc\Channel.cs" />
     <Compile Include="Commands\CommandFactory.cs" />
     <Compile Include="Commands\CommandProcessor.cs" />
-    <Compile Include="IncDec.cs" />
+    <Compile Include="Rc\IncDec.cs" />
     <Compile Include="Commands\ExtendedCmd.cs" />
-    <Compile Include="Internal\ExtendedMsg.cs" />
-    <Compile Include="ExtFunction.cs" />
-    <Compile Include="Internal\SingleOutputMode.cs" />
+    <Compile Include="Protocol\ExtendedMsg.cs" />
+    <Compile Include="Rc\ExtFunction.cs" />
+    <Compile Include="Protocol\SingleOutputMode.cs" />
     <Compile Include="Actuators\Receiver.cs" />
-    <Compile Include="PwmSpeed.cs" />
+    <Compile Include="Rc\PwmSpeed.cs" />
     <Compile Include="Commands\CommandType.cs" />
     <Compile Include="Commands\ComboDirectCmd.cs" />
-    <Compile Include="DirectState.cs" />
+    <Compile Include="Rc\DirectState.cs" />
     <Compile Include="Commands\ComboPwmCmd.cs" />
     <Compile Include="Commands\Command.cs" />
-    <Compile Include="RemoteControl.cs" />
-    <Compile Include="Internal\ComboDirectMsg.cs" />
-    <Compile Include="Internal\ComboPwmMsg.cs" />
-    <Compile Include="Internal\Escape.cs" />
-    <Compile Include="Internal\IrPulse.cs" />
-    <Compile Include="Internal\IrPulseEncoder.cs" />
-    <Compile Include="Internal\Message.cs" />
-    <Compile Include="Output.cs" />
-    <Compile Include="Internal\SingleOutputMsg.cs" />
-    <Compile Include="Internal\Toggle.cs" />
-    <Compile Include="Internal\MessageFactory.cs" />
+    <Compile Include="Rc\RemoteControl.cs" />
+    <Compile Include="Protocol\ComboDirectMsg.cs" />
+    <Compile Include="Protocol\ComboPwmMsg.cs" />
+    <Compile Include="Protocol\Escape.cs" />
+    <Compile Include="Protocol\IrPulse.cs" />
+    <Compile Include="Protocol\IrPulseEncoder.cs" />
+    <Compile Include="Protocol\Message.cs" />
+    <Compile Include="Rc\Output.cs" />
+    <Compile Include="Protocol\SingleOutputMsg.cs" />
+    <Compile Include="Protocol\Toggle.cs" />
+    <Compile Include="Protocol\MessageFactory.cs" />
     <Compile Include="Commands\SingleOutputCmd.cs" />
-    <Compile Include="Internal\Transmitter.cs" />
+    <Compile Include="Protocol\Transmitter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

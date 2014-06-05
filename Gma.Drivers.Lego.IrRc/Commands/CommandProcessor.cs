@@ -4,39 +4,24 @@
 
 #region usings
 
-using System;
-using Gma.Netmf.Hardware.Lego.IrRc.Internal;
+using Gma.Netmf.Hardware.Lego.PowerFunctions.Protocol;
+using Gma.Netmf.Hardware.Lego.PowerFunctions.Rc;
 
 #endregion
 
-namespace Gma.Netmf.Hardware.Lego.IrRc.Commands
+namespace Gma.Netmf.Hardware.Lego.PowerFunctions.Commands
 {
-    public class CommandProcessor : IDisposable
+    public class CommandProcessor
     {
         private readonly Channel m_Channel;
-        private readonly bool m_DisposeTransmitter;
         private readonly Transmitter m_Transmitter;
         private Toggle m_Toggle;
 
-        public CommandProcessor(Channel channel)
-            : this(new Transmitter(), channel, true)
-        {
-        }
-
-        internal CommandProcessor(Transmitter transmitter, Channel channel, bool disposeTransmitter)
+        public CommandProcessor(Transmitter transmitter, Channel channel)
         {
             m_Transmitter = transmitter;
             m_Channel = channel;
-            m_DisposeTransmitter = disposeTransmitter;
             m_Toggle = Toggle.Even;
-        }
-
-        public void Dispose()
-        {
-            if (m_DisposeTransmitter)
-            {
-                m_Transmitter.Dispose();
-            }
         }
 
         public void Execute(Command command)

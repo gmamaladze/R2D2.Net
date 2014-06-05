@@ -1,6 +1,7 @@
-using Gma.Netmf.Hardware.Lego.IrRc.Commands;
+using Gma.Netmf.Hardware.Lego.PowerFunctions.Commands;
+using Gma.Netmf.Hardware.Lego.PowerFunctions.Rc;
 
-namespace Gma.Netmf.Hardware.Lego.IrRc.Internal
+namespace Gma.Netmf.Hardware.Lego.PowerFunctions.Protocol
 {
     internal class ExtendedMsg : Message
     {

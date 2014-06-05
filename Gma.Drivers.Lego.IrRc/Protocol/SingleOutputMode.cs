@@ -2,11 +2,11 @@
 // Copyright (c) 2014 George Mamaladze
 // See license.txt or http://opensource.org/licenses/mit-license.php
 
-namespace Gma.Netmf.Hardware.Lego.IrRc.Internal
+namespace Gma.Netmf.Hardware.Lego.PowerFunctions.Protocol
 {
-    internal enum Escape : byte
+    internal enum SingleOutputMode : byte
     {
-        UseMode0 = 0,
-        ComboPwmMode1 = 1
+        Pwm = 0x00,
+        IncDec = 0x01
     }
 }

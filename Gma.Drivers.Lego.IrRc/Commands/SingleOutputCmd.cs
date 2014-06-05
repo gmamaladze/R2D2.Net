@@ -2,9 +2,10 @@
 // Copyright (c) 2014 George Mamaladze
 // See license.txt or http://opensource.org/licenses/mit-license.php
 
-using Gma.Netmf.Hardware.Lego.IrRc.Internal;
+using Gma.Netmf.Hardware.Lego.PowerFunctions.Protocol;
+using Gma.Netmf.Hardware.Lego.PowerFunctions.Rc;
 
-namespace Gma.Netmf.Hardware.Lego.IrRc.Commands
+namespace Gma.Netmf.Hardware.Lego.PowerFunctions.Commands
 {
     public class SingleOutputCmd : Command
     {

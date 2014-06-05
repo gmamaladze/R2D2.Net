@@ -5,11 +5,11 @@
 #region usings
 
 using System;
-using Gma.Netmf.Hardware.Lego.IrRc.Commands;
+using Gma.Netmf.Hardware.Lego.PowerFunctions.Commands;
 
 #endregion
 
-namespace Gma.Netmf.Hardware.Lego.IrRc
+namespace Gma.Netmf.Hardware.Lego.PowerFunctions.Rc
 {
     public class RemoteControl : IDisposable
     {

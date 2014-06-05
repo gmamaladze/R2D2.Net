@@ -6,13 +6,14 @@
 
 using System;
 using System.Threading;
+using Gma.Netmf.Hardware.Lego.PowerFunctions.Rc;
 using Microsoft.SPOT.Hardware;
 
 #endregion
 
-namespace Gma.Netmf.Hardware.Lego.IrRc.Internal
+namespace Gma.Netmf.Hardware.Lego.PowerFunctions.Protocol
 {
-    internal class Transmitter : IDisposable
+    public class Transmitter : IDisposable
     {
         private const int MessageResendCount = 5;
         private readonly bool m_DisposeSpi;
@@ -27,7 +28,7 @@ namespace Gma.Netmf.Hardware.Lego.IrRc.Internal
         {
         }
 
-        public Transmitter(SPI spi, bool disposeSpi)
+        internal Transmitter(SPI spi, bool disposeSpi)
         {
             m_Spi = spi;
             m_DisposeSpi = disposeSpi;
@@ -63,7 +64,7 @@ namespace Gma.Netmf.Hardware.Lego.IrRc.Internal
             return new SPI(config);
         }
 
-        public void Send(Message message)
+        internal void Send(Message message)
         {
             var rawData = message.GetData();
             var channel = message.Channel;

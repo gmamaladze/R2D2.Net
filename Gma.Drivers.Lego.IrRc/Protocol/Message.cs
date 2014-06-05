@@ -4,9 +4,13 @@
 
 #region usings
 
+using Gma.Netmf.Hardware.Lego.PowerFunctions.Rc;
+
 #endregion
 
-namespace Gma.Netmf.Hardware.Lego.IrRc.Internal
+
+
+namespace Gma.Netmf.Hardware.Lego.PowerFunctions.Protocol
 {
     /// <summary>
     ///     Accomodates common code for all types of messages.

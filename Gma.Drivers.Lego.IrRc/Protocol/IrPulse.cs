@@ -2,13 +2,11 @@
 // Copyright (c) 2014 George Mamaladze
 // See license.txt or http://opensource.org/licenses/mit-license.php
 
-namespace Gma.Netmf.Hardware.Lego.IrRc
+namespace Gma.Netmf.Hardware.Lego.PowerFunctions.Protocol
 {
-    public enum Channel : byte
+    internal enum IrPulse : ushort
     {
-        Ch1 = 0x0,
-        Ch2 = 0x1,
-        Ch3 = 0x2,
-        Ch4 = 0x3
-    };
+        High = 0xFE00,
+        Low = 0x0000
+    }
 }
