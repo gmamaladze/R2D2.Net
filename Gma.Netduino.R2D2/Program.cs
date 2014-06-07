@@ -7,6 +7,7 @@
 using Gma.Netmf.Hardware.Lego.PowerFunctions.Actuators;
 using Gma.Netmf.Hardware.Lego.PowerFunctions.Rc;
 using SecretLabs.NETMF.Hardware.Netduino;
+using Gma.Netmf.Hardware.Lego.PowerFunctions.Protocol;
 
 #endregion
 
@@ -16,7 +17,8 @@ namespace Gma.Netduino.R2D2
     {
         public static void Main()
         {
-            var receiver = new Receiver(Channel.Ch1);
+            var transmitter = new Transmitter();
+            var receiver = new Receiver(transmitter, Channel.Ch1);
             var motor = new Motor(receiver.RedConnector);
             var servo = new Servo(receiver.BlueConnector);
             var sonar = new Sonar(Pins.GPIO_PIN_D0);
@@ -27,7 +29,7 @@ namespace Gma.Netduino.R2D2
             while (!robot.IsBlocked())
             {
                 robot.Reset();
-                if (robot.HasBarrier())
+                if (!robot.HasBarrier())
                 {
                     robot.StepForward();
                 }

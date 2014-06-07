@@ -34,7 +34,7 @@ namespace Gma.Netmf.Hardware.Lego.PowerFunctions.Actuators
 
         public static PwmSpeed FromPercent(this int percent)
         {
-            var index = (int)Math.Truncate(75.0 * (100 + percent) / 15000);
+            var index = percent;// (int)Math.Truncate((75.0 * (100 + percent)) / 1500);
             return AscendingSpeeds[index];
         }
 

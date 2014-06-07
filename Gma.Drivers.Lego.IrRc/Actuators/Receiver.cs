@@ -3,6 +3,7 @@
 // See license.txt or http://opensource.org/licenses/mit-license.php
 
 using Gma.Netmf.Hardware.Lego.PowerFunctions.Rc;
+using Gma.Netmf.Hardware.Lego.PowerFunctions.Protocol;
 
 namespace Gma.Netmf.Hardware.Lego.PowerFunctions.Actuators
 {
@@ -11,8 +12,8 @@ namespace Gma.Netmf.Hardware.Lego.PowerFunctions.Actuators
         private readonly Connector m_BlueConnector;
         private readonly Connector m_RedConnector;
 
-        public Receiver(Channel channel)
-            : this(new RemoteControl(channel))
+        public Receiver(Transmitter transmitter, Channel channel)
+            : this(new RemoteControl(transmitter, channel))
         {
         }
 

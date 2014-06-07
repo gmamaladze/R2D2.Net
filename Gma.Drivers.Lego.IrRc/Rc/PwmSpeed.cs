@@ -15,12 +15,12 @@ namespace Gma.Netmf.Hardware.Lego.PowerFunctions.Rc
         ForwardStep6 = 6,
         ForwardStep7 = 7,
         BreakThenFloat = 8,
-        BackwardStep7 = 7,
-        BackwardStep6 = 6,
-        BackwardStep5 = 5,
-        BackwardStep4 = 4,
-        BackwardStep3 = 3,
-        BackwardStep2 = 2,
-        BackwardStep1 = 1
+        BackwardStep7 = 9,
+        BackwardStep6 = 10,
+        BackwardStep5 = 11,
+        BackwardStep4 = 12,
+        BackwardStep3 = 13,
+        BackwardStep2 = 14,
+        BackwardStep1 = 15
     }
 }

@@ -6,33 +6,23 @@
 
 using System;
 using Gma.Netmf.Hardware.Lego.PowerFunctions.Commands;
-
+using Gma.Netmf.Hardware.Lego.PowerFunctions.Protocol;
 #endregion
 
 namespace Gma.Netmf.Hardware.Lego.PowerFunctions.Rc
 {
-    public class RemoteControl : IDisposable
+    public class RemoteControl
     {
         private readonly CommandProcessor m_CommandProcessor;
-        private readonly bool m_DisposeCommandProcessor;
 
-        public RemoteControl(Channel channel)
-            : this(new CommandProcessor(channel), true)
+        public RemoteControl(Transmitter transmitter, Channel channel)
+            : this(new CommandProcessor(transmitter, channel), true)
         {
         }
 
         public RemoteControl(CommandProcessor commandProcessor, bool disposeCommandProcessor)
         {
             m_CommandProcessor = commandProcessor;
-            m_DisposeCommandProcessor = disposeCommandProcessor;
-        }
-
-        public void Dispose()
-        {
-            if (m_DisposeCommandProcessor)
-            {
-                m_CommandProcessor.Dispose();
-            }
         }
 
         public void Execute(ExtFunction extFunction)

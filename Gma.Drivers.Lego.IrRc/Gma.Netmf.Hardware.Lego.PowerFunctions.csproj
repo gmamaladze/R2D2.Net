@@ -34,7 +34,7 @@
     <Compile Include="Actuators\Actuator.cs" />
     <Compile Include="Actuators\Connector.cs" />
     <Compile Include="Actuators\Motor.cs" />
-    <Compile Include="Actuators\PwmSpeedExtensions.cs" />
+    <Compile Include="Rc\PwmSpeedExtensions.cs" />
     <Compile Include="Actuators\Servo.cs" />
     <Compile Include="Rc\Channel.cs" />
     <Compile Include="Commands\CommandFactory.cs" />

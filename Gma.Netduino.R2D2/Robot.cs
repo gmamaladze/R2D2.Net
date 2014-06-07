@@ -48,7 +48,7 @@ namespace Gma.Netduino.R2D2
 
         public void StepForward()
         {
-            m_DriveMotor.SetSpeed(50);
+            m_DriveMotor.SetSpeed(4);
             Thread.Sleep(100);
         }
 
@@ -66,7 +66,7 @@ namespace Gma.Netduino.R2D2
 
         public void StepBackward()
         {
-            m_DriveMotor.SetSpeed(-50);
+            m_DriveMotor.SetSpeed(12);
             Thread.Sleep(100);
         }
     }
